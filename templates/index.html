@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glucose Prediction Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Toast notifications -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f5f8fa;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+        .card-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 15px 20px;
+            border-radius: 10px 10px 0 0 !important;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 400px;
+        }
+        .history-chart-container {
+            position: relative;
+            margin: auto;
+            height: 300px;
+        }
+        #rangesContainer div {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .prediction-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            color: #6c757d;
+            font-weight: 500;
+        }
+        .nav-tabs .nav-link.active {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            background-color: transparent;
+        }
+        .history-card {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .history-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+        .history-empty {
+            text-align: center;
+            padding: 50px 0;
+            color: #6c757d;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #notification-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            display: none;
+            z-index: 1000;
+        }
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            .card {
+                margin-bottom: 15px;
+            }
+            .chart-container, .history-chart-container {
+                height: 250px;
+            }
+            #rangesContainer div {
+                font-size: 12px;
+                padding: 3px 6px;
+                margin-right: 5px;
+            }
+            .card-header {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0">Glucose Prediction Dashboard</h1>
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ name }} {% if role == 'admin' %}<span class="badge bg-primary">Admin</span>{% endif %}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        {% if role == 'admin' %}
+                        <li><a class="dropdown-item" href="{{ url_for('get_users') }}">Manage Users</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Notification bar for alerts -->
+        <div id="notification-bar"></div>
+        
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="predict-tab" data-bs-toggle="tab" data-bs-target="#predict-tab-pane" type="button" role="tab" aria-controls="predict-tab-pane" aria-selected="true">Prediction</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history-tab-pane" type="button" role="tab" aria-controls="history-tab-pane" aria-selected="false">History</button>
+            </li>
+        </ul>
+        
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Prediction Tab -->
+            <div class="tab-pane fade show active" id="predict-tab-pane" role="tabpanel" aria-labelledby="predict-tab" tabindex="0">
+                <div class="row">
+                    <!-- Input Form -->
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Input Parameters</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="predictionForm">
+                                    <div class="mb-3">
+                                        <label for="patient_id" class="form-label">Patient ID</label>
+                                        <select class="form-select" id="patient_id" name="patient_id" required>
+                                            {% for patient in patients %}
+                                            <option value="{{ patient }}">{{ patient }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="glucose_value" class="form-label">Current Glucose (mg/dL)</label>
+                                        <input type="number" class="form-control" id="glucose_value" name="glucose_value" required min="40" max="400" step="0.1" value="150">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="glucose_diff" class="form-label">Glucose Difference (last 5 min)</label>
+                                        <input type="number" class="form-control" id="glucose_diff" name="glucose_diff" required step="0.1" value="1.0">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="glucose_diff_rate" class="form-label">Glucose Rate of Change (mg/dL/min)</label>
+                                        <input type="number" class="form-control" id="glucose_diff_rate" name="glucose_diff_rate" required step="0.1" value="0.2">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="glucose_rolling_mean_1h" class="form-label">1-Hour Glucose Average</label>
+                                        <input type="number" class="form-control" id="glucose_rolling_mean_1h" name="glucose_rolling_mean_1h" required min="40" max="400" step="0.1" value="145">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="glucose_rolling_std_1h" class="form-label">1-Hour Glucose Std Dev</label>
+                                        <input type="number" class="form-control" id="glucose_rolling_std_1h" name="glucose_rolling_std_1h" required min="0" step="0.1" value="10">
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label for="insulin_dose" class="form-label">Recent Insulin (U)</label>
+                                            <input type="number" class="form-control" id="insulin_dose" name="insulin_dose" required min="0" step="0.1" value="0">
+                                        </div>
+                                        <div class="col">
+                                            <label for="carbs_1h" class="form-label">Recent Carbs (g)</label>
+                                            <input type="number" class="form-control" id="carbs_1h" name="carbs_1h" required min="0" step="1" value="0">
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary w-100">Predict Glucose</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Results and Chart -->
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Glucose Predictions</h5>
+                                <div id="rangesContainer">
+                                    <div style="background-color: #f8d7da;">Hypo < 70 mg/dL</div>
+                                    <div style="background-color: #d1e7dd;">Normal 70-180 mg/dL</div>
+                                    <div style="background-color: #fff3cd;">Hyper > 180 mg/dL</div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container">
+                                    <canvas id="glucoseChart"></canvas>
+                                </div>
+                                
+                                <div id="predictionInfo" class="prediction-info">
+                                    <h5>Prediction Details</h5>
+                                    <div id="predictionTime"></div>
+                                    <div id="featuresUsed" class="mt-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- History Tab -->
+            <div class="tab-pane fade" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Glucose History</h5>
+                                <div>
+                                    <button id="clearHistoryBtn" class="btn btn-sm btn-outline-danger">Clear History</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="history-chart-container mb-4">
+                                    <canvas id="historyChart"></canvas>
+                                </div>
+                                
+                                <h6 class="mt-4 mb-3">Recent Predictions</h6>
+                                <div id="historyList" class="row"></div>
+                                <div id="historyEmpty" class="history-empty">
+                                    <p>No prediction history available. Make some predictions first!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configure toastr notifications
+        toastr.options = {
+            "closeButton": true,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": true,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000"
+        };
+        
+        // Initialize the chart
+        const ctx = document.getElementById('glucoseChart').getContext('2d');
+        const glucoseChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Current'],
+                datasets: [{
+                    label: 'Glucose Level',
+                    data: [150],
+                    borderColor: '#3498db',
+                    backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                    borderWidth: 3,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#3498db',
+                    tension: 0.2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Glucose: ${context.raw} mg/dL`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        min: 40,
+                        max: 400,
+                        title: {
+                            display: true,
+                            text: 'Glucose (mg/dL)'
+                        },
+                        grid: {
+                            color: function(context) {
+                                if (context.tick.value === 70) return '#f8d7da';
+                                if (context.tick.value === 180) return '#fff3cd';
+                                return '#e9ecef';
+                            },
+                            lineWidth: function(context) {
+                                if (context.tick.value === 70 || context.tick.value === 180) return 2;
+                                return 1;
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Time'
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Initialize history chart
+        const historyCtx = document.getElementById('historyChart').getContext('2d');
+        const historyChart = new Chart(historyCtx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Measured',
+                        data: [],
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        pointBackgroundColor: '#3498db',
+                        tension: 0.2,
+                        fill: false
+                    },
+                    {
+                        label: '15min Prediction',
+                        data: [],
+                        borderColor: '#2ecc71',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        pointBackgroundColor: '#2ecc71',
+                        tension: 0.2,
+                        fill: false
+                    },
+                    {
+                        label: '30min Prediction',
+                        data: [],
+                        borderColor: '#e74c3c',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        pointBackgroundColor: '#e74c3c',
+                        tension: 0.2,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.dataset.label}: ${context.raw} mg/dL`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        min: 40,
+                        max: 400,
+                        title: {
+                            display: true,
+                            text: 'Glucose (mg/dL)'
+                        },
+                        grid: {
+                            color: function(context) {
+                                if (context.tick.value === 70) return '#f8d7da';
+                                if (context.tick.value === 180) return '#fff3cd';
+                                return '#e9ecef';
+                            },
+                            lineWidth: function(context) {
+                                if (context.tick.value === 70 || context.tick.value === 180) return 2;
+                                return 1;
+                            }
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Time'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Check for dangerous glucose levels and show notification
+        function checkGlucoseLevels(glucose, prediction15min, prediction30min) {
+            // Clear previous notification
+            $('#notification-bar').hide();
+            
+            let dangerMessage = '';
+            
+            // Check current glucose
+            if (glucose < 70) {
+                dangerMessage = `ALERT: Current glucose (${glucose.toFixed(1)} mg/dL) is below 70 mg/dL`;
+                toastr.error(dangerMessage, 'Hypoglycemia Alert');
+            } else if (glucose > 250) {
+                dangerMessage = `ALERT: Current glucose (${glucose.toFixed(1)} mg/dL) is above 250 mg/dL`;
+                toastr.warning(dangerMessage, 'Hyperglycemia Alert');
+            }
+            
+            // Check 15-min prediction if it exists
+            if (prediction15min) {
+                if (prediction15min < 65) {
+                    dangerMessage = `ALERT: Predicted glucose in 15 minutes (${prediction15min.toFixed(1)} mg/dL) will be dangerously low`;
+                    toastr.error(dangerMessage, 'Imminent Hypoglycemia');
+                } else if (prediction15min > 280) {
+                    dangerMessage = `ALERT: Predicted glucose in 15 minutes (${prediction15min.toFixed(1)} mg/dL) will be dangerously high`;
+                    toastr.warning(dangerMessage, 'Severe Hyperglycemia Alert');
+                }
+            }
+            
+            // If we have a danger message, show in the notification bar
+            if (dangerMessage) {
+                $('#notification-bar').text(dangerMessage).show();
+                
+                // Vibrate if available (mobile devices)
+                if ('vibrate' in navigator) {
+                    navigator.vibrate([200, 100, 200]);
+                }
+            }
+        }
+
+        // Update patient-specific horizons
+        document.getElementById('patient_id').addEventListener('change', function() {
+            const patientId = this.value;
+            
+            fetch('/get_horizons', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `patient_id=${patientId}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Horizons:', data.horizons);
+            })
+            .catch(error => console.error('Error fetching horizons:', error));
+        });
+
+        // Handle form submission
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    console.error('Prediction error:', data.error);
+                    toastr.error(data.error, 'Prediction Failed');
+                    return;
+                }
+                
+                updateChart(data);
+                displayPredictionInfo(data);
+                
+                // Check for dangerous glucose levels
+                const prediction15min = data.predictions["15min"];
+                const prediction30min = data.predictions["30min"];
+                checkGlucoseLevels(data.current_glucose, prediction15min, prediction30min);
+                
+                // Update history tab when new prediction is made
+                loadHistory();
+            })
+            .catch(error => {
+                console.error('Error making prediction:', error);
+                toastr.error('Could not connect to the prediction service', 'Service Error');
+            });
+        });
+
+        function updateChart(data) {
+            // Create labels and data arrays
+            const labels = ['Current'];
+            const glucoseValues = [data.current_glucose];
+            const backgroundColors = [];
+            const borderColors = [];
+            
+            // Determine color for current glucose
+            let color = getGlucoseColor(data.current_glucose);
+            backgroundColors.push(color.bg);
+            borderColors.push(color.border);
+            
+            // Add prediction times and values
+            Object.keys(data.predictions).forEach(horizon => {
+                labels.push(data.timestamps[horizon]);
+                glucoseValues.push(data.predictions[horizon]);
+                
+                // Determine color for predicted glucose
+                color = getGlucoseColor(data.predictions[horizon]);
+                backgroundColors.push(color.bg);
+                borderColors.push(color.border);
+            });
+            
+            // Update chart data
+            glucoseChart.data.labels = labels;
+            glucoseChart.data.datasets[0].data = glucoseValues;
+            glucoseChart.data.datasets[0].pointBackgroundColor = backgroundColors;
+            glucoseChart.data.datasets[0].pointBorderColor = borderColors;
+            
+            glucoseChart.update();
+        }
+        
+        function getGlucoseColor(glucose) {
+            if (glucose < 70) {
+                return { bg: '#f8d7da', border: '#dc3545' }; // Low - red
+            } else if (glucose > 180) {
+                return { bg: '#fff3cd', border: '#ffc107' }; // High - yellow
+            } else {
+                return { bg: '#d1e7dd', border: '#198754' }; // Normal - green
+            }
+        }
+        
+        function displayPredictionInfo(data) {
+            const predictionInfo = document.getElementById('predictionInfo');
+            const predictionTime = document.getElementById('predictionTime');
+            const featuresUsed = document.getElementById('featuresUsed');
+            
+            predictionInfo.style.display = 'block';
+            
+            // Show prediction time
+            const now = new Date();
+            predictionTime.innerHTML = `<strong>Prediction made at:</strong> ${now.toLocaleTimeString()}`;
+            
+            // Show features used for prediction
+            let featuresHtml = '<strong>Features used:</strong><ul>';
+            for (const horizon in data.features_used) {
+                featuresHtml += `<li>${horizon}: ${data.features_used[horizon].join(', ')}</li>`;
+            }
+            featuresHtml += '</ul>';
+            
+            featuresUsed.innerHTML = featuresHtml;
+        }
+        
+        // Load history data
+        function loadHistory() {
+            fetch('/history')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.history && data.history.length > 0) {
+                        updateHistoryList(data.history);
+                        updateHistoryChart(data.history);
+                        $('#historyEmpty').hide();
+                    } else {
+                        $('#historyList').html('');
+                        $('#historyEmpty').show();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading history:', error);
+                    toastr.error('Could not load prediction history', 'Error');
+                });
+        }
+        
+        // Update the history list
+        function updateHistoryList(history) {
+            const historyList = document.getElementById('historyList');
+            historyList.innerHTML = '';
+            
+            history.slice(0, 6).forEach((entry, index) => {
+                const card = document.createElement('div');
+                card.className = 'col-md-4 col-sm-6 mb-3';
+                
+                // Determine if any predicted values were dangerous
+                const current = entry.current_glucose;
+                const predictions = entry.predictions;
+                let dangerClass = '';
+                let dangerText = '';
+                
+                if (current < 70 || (predictions["15min"] && predictions["15min"] < 70)) {
+                    dangerClass = 'border-danger';
+                    dangerText = '<span class="badge bg-danger">Hypo</span>';
+                } else if (current > 180 || (predictions["15min"] && predictions["15min"] > 180)) {
+                    dangerClass = 'border-warning';
+                    dangerText = '<span class="badge bg-warning text-dark">Hyper</span>';
+                }
+                
+                card.innerHTML = `
+                    <div class="card history-card ${dangerClass}">
+                        <div class="card-body p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h6 class="card-title mb-1">${entry.display_time}</h6>
+                                ${dangerText}
+                            </div>
+                            <p class="card-text mb-0">Current: ${current.toFixed(1)} mg/dL</p>
+                            ${predictions["15min"] ? `<p class="card-text mb-0">15min: ${predictions["15min"].toFixed(1)} mg/dL</p>` : ''}
+                            ${predictions["30min"] ? `<p class="card-text mb-0">30min: ${predictions["30min"].toFixed(1)} mg/dL</p>` : ''}
+                        </div>
+                    </div>
+                `;
+                
+                historyList.appendChild(card);
+            });
+        }
+        
+        // Update the history chart
+        function updateHistoryChart(history) {
+            // Reverse the history to show in chronological order
+            const chronological = [...history].reverse();
+            
+            // Extract data for the chart
+            const times = chronological.map(entry => entry.display_time);
+            const currentValues = chronological.map(entry => entry.current_glucose);
+            
+            // Create datasets for predictions (only if they exist)
+            const prediction15min = [];
+            const prediction30min = [];
+            
+            // Find the first entry with 15min and 30min predictions to determine if they exist
+            const has15min = chronological.some(entry => entry.predictions["15min"]);
+            const has30min = chronological.some(entry => entry.predictions["30min"]);
+            
+            // If we have those predictions, fill the arrays
+            if (has15min || has30min) {
+                chronological.forEach(entry => {
+                    prediction15min.push(has15min ? entry.predictions["15min"] : null);
+                    prediction30min.push(has30min ? entry.predictions["30min"] : null);
+                });
+            }
+            
+            // Update chart data
+            historyChart.data.labels = times;
+            historyChart.data.datasets[0].data = currentValues;
+            
+            // Only include prediction datasets if they exist
+            historyChart.data.datasets[1].data = prediction15min;
+            historyChart.data.datasets[2].data = prediction30min;
+            
+            // Show/hide datasets based on availability
+            historyChart.data.datasets[1].hidden = !has15min;
+            historyChart.data.datasets[2].hidden = !has30min;
+            
+            historyChart.update();
+        }
+        
+        // Clear history
+        document.getElementById('clearHistoryBtn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to clear all prediction history?')) {
+                fetch('/clear_history', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        loadHistory();
+                        toastr.success('Prediction history has been cleared', 'Success');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error clearing history:', error);
+                    toastr.error('Could not clear prediction history', 'Error');
+                });
+            }
+        });
+        
+        // Load history on page load and when history tab is activated
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHistory();
+        });
+        
+        document.getElementById('history-tab').addEventListener('click', function() {
+            loadHistory();
+        });
+        
+        // For mobile: responsive UI adjustments
+        function adjustForMobile() {
+            if (window.innerWidth < 768) {
+                // Adjust chart options for better mobile view
+                glucoseChart.options.plugins.legend.display = false;
+                historyChart.options.plugins.legend.display = true;
+                historyChart.options.plugins.legend.position = 'top';
+                
+                // Update charts
+                glucoseChart.update();
+                historyChart.update();
+            }
+        }
+        
+        // Run mobile adjustments
+        adjustForMobile();
+        window.addEventListener('resize', adjustForMobile);
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
