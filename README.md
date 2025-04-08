@@ -10,7 +10,7 @@ This project provides:
 2. **Validation Framework**: Tools to validate prediction accuracy against historical data.
 3. **Web Interface**: User-friendly interface for accessing predictions and visualizing results.
 
-![Clarke Error Grid](https://i.imgur.com/YEfG2Qn.png)
+![Clarke Error Grid](images/clarke_grid_example.png)
 *Sample Clarke Error Grid Analysis showing prediction clinical accuracy*
 
 ## Project Structure

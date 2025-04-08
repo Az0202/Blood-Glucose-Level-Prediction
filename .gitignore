@@ -79,6 +79,9 @@ api_comparison_results/
 validation_results.json
 api_comparison_results_*.json
 
+# Exception for the example image
+!images/clarke_grid_example.png
+
 # Keep only sample data files
 # Uncomment below line if you want to exclude large data files
 # features/20*_*_features*.csv 
