@@ -154,7 +154,7 @@ Average API response time: 1.86ms
 
 ## Acknowledgments
 
-- CGM datasets from the [Ohio T1DM Dataset](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6368579/)
+- CGM datasets from the [Ohio T1DM Dataset](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881904/)
 - Clarke Error Grid implementation adapted from multiple sources
 
 ## License
