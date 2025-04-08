@@ -97,4 +97,12 @@ DATA/2020/**/*.xml
 !DATA/2020/
 !DATA/2020/Train/
 !DATA/2020/Test/
-!DATA/README.md 
+!DATA/README.md DATA_backup/
+features/*_extended.csv
+features/*_original.csv
+features/567_*.csv
+features/575_*.csv
+features/584_*.csv
+features/588_*.csv
+features/591_*.csv
+features/596_*.csv
