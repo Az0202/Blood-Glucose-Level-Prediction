@@ -87,6 +87,23 @@ pip install -r requirements.txt
 python create_sample_data.py
 ```
 
+## Quick Demo
+
+To quickly run through the entire workflow, use the demo script:
+
+```bash
+./run_demo.sh
+```
+
+This script will:
+1. Check and install dependencies
+2. Generate sample data
+3. Preprocess the data
+4. Start the prediction API
+5. Test the API with sample data
+
+For a more detailed walkthrough, see [END_TO_END_DEMO.md](END_TO_END_DEMO.md).
+
 ## Dataset Information
 
 This project uses the OhioT1DM dataset format, which contains data for people with type 1 diabetes including:

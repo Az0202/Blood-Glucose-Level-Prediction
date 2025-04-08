@@ -2,6 +2,26 @@
 
 This document demonstrates the complete workflow for blood glucose level prediction using the sample data.
 
+## 0. Installation and Setup
+
+Before starting, make sure to install the required dependencies:
+
+```bash
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+All required packages are listed in the requirements.txt file, including:
+- fastapi and uvicorn for the API
+- pandas and numpy for data processing
+- scikit-learn for model training and evaluation
+- matplotlib and seaborn for visualization
+- requests for API testing
+
 ## 1. Generating Sample Data
 
 The first step is to generate synthetic sample data in the same format as the OhioT1DM dataset:
