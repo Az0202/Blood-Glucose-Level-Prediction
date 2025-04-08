@@ -33,7 +33,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn requests tqdm
 ### Basic Usage
 
 ```bash
-python validate_api.py --test_file /path/to/test_features.csv --patient_ids 570,575 --horizons 15,30 --api_url http://localhost:8001
+python validate_api.py --test_file /path/to/test_features.csv --patient_ids 570,575,588,591 --horizons 15,30 --api_url http://localhost:8001
 ```
 
 ### Command-line Arguments
@@ -45,6 +45,14 @@ python validate_api.py --test_file /path/to/test_features.csv --patient_ids 570,
 | `--horizons` | Comma-separated list of prediction horizons (minutes) | 15,30 |
 | `--api_url` | Base URL of the API | http://localhost:8001 |
 | `--output_dir` | Directory to save validation results | validation_results |
+
+### Important Notes About Parameters
+
+- **Multiple Patient IDs**: Always test with multiple patients to get a comprehensive assessment of performance across different glucose patterns. For example: `--patient_ids 570,575,588,591`
+- **API URL**: Make sure to use the correct port where your API is running:
+  - The prediction API typically runs on port 8001 (`http://localhost:8001`)
+  - The web interface typically runs on port 5001 (`http://localhost:5001`)
+  - For validation, you need to target the API directly, not the web interface
 
 ### Test Data Format
 
@@ -138,6 +146,17 @@ To analyze how prediction accuracy varies across patients:
 python validate_api.py --test_file features/2018_test_features.csv --patient_ids 570,575,588,591 --output_dir patient_comparison
 ```
 
+Example output comparison:
+```
+15min Horizon Summary by Patient:
+- Patient 570: RMSE 24.55 mg/dL, Clarke Zone A 89.0%
+- Patient 575: RMSE 20.31 mg/dL, Clarke Zone A 91.0%
+- Patient 588: RMSE 14.90 mg/dL, Clarke Zone A 97.0% (best performer)
+- Patient 591: RMSE 15.72 mg/dL, Clarke Zone A 88.0%
+```
+
+This patient-specific analysis helps identify which glucose patterns your model handles best and which need improvement.
+
 ### Testing Different Horizons
 
 To evaluate how prediction accuracy degrades with longer horizons:
@@ -149,7 +168,11 @@ python validate_api.py --test_file features/2018_test_features.csv --patient_ids
 ## Troubleshooting
 
 1. **API Connection Issues**: Ensure the API is running at the specified URL before starting validation
+   - For the simple API: `python simple_glucose_api.py` (runs on port 8001)
+   - Check if it's running: `curl http://localhost:8001/`
+
 2. **Missing Data**: Verify test file includes required columns and target values for selected horizons
+
 3. **Memory Issues**: For large test files, consider validating fewer patients or horizons at once
 
 ## Interpreting Results
@@ -167,7 +190,7 @@ Good performance generally means:
 This validation script can be integrated into CI/CD pipelines to ensure model quality before deployment:
 
 ```bash
-python validate_api.py --test_file test_data.csv --output_dir ci_results --patient_ids 570
+python validate_api.py --test_file test_data.csv --output_dir ci_results --patient_ids 570,575,588,591
 # Add thresholds for CI pass/fail based on metrics
 if grep -q "Mean RMSE: [0-9]\{1,2\}\.[0-9]\{2\}" ci_results/validation_summary.txt; then
   echo "Validation passed"
