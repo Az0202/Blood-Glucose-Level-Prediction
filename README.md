@@ -23,7 +23,6 @@ This project provides:
 ├── validate_api.py               # Prediction validation framework
 ├── compare_api_predictions.py    # API comparison tool
 ├── web_interface.py              # Web interface for the prediction system
-├── blood_glucose_prediction.ipynb # Jupyter notebook with model development
 │
 ├── models/                       # Trained machine learning models
 │   ├── 570/                      # Models for patient 570
