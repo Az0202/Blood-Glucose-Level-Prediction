@@ -100,12 +100,16 @@ def plot_clarke_error_grid(reference, prediction, patient_id, horizon, output_di
     # Calculate zone percentages
     zones = clarke_error_grid(reference, prediction)
     
-    # Add zone percentages to the plot
-    plt.text(300, 380, f"Zone A: {zones['A']:.1f}%", fontsize=12)
-    plt.text(300, 360, f"Zone B: {zones['B']:.1f}%", fontsize=12)
-    plt.text(300, 340, f"Zone C: {zones['C']:.1f}%", fontsize=12)
-    plt.text(300, 320, f"Zone D: {zones['D']:.1f}%", fontsize=12)
-    plt.text(300, 300, f"Zone E: {zones['E']:.1f}%", fontsize=12)
+    # Add zone percentages to the plot - MOVED TO LEFT SIDE with a background box
+    # Create a semi-transparent white box for better readability
+    plt.gca().add_patch(plt.Rectangle((20, 320), 150, 70, facecolor='white', alpha=0.7))
+    
+    # Add percentage text on top of the box
+    plt.text(30, 380, f"Zone A: {zones['A']:.1f}%", fontsize=12)
+    plt.text(30, 360, f"Zone B: {zones['B']:.1f}%", fontsize=12)
+    plt.text(30, 340, f"Zone C: {zones['C']:.1f}%", fontsize=12)
+    plt.text(30, 320, f"Zone D: {zones['D']:.1f}%", fontsize=12)
+    plt.text(30, 300, f"Zone E: {zones['E']:.1f}%", fontsize=12)
     
     plt.title(f'Clarke Error Grid - Patient {patient_id} - {horizon}min Predictions')
     plt.xlabel('Reference Glucose (mg/dL)')
