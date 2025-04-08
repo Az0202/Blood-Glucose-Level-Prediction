@@ -82,7 +82,37 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Generate sample data (since the actual dataset requires a DUA)
+python create_sample_data.py
 ```
+
+## Dataset Information
+
+This project uses the OhioT1DM dataset format, which contains data for people with type 1 diabetes including:
+- CGM blood glucose readings
+- Insulin doses
+- Meal information
+- Self-reported life events
+
+For legal and ethical reasons, the actual OhioT1DM dataset is not included in this repository as it requires a Data Use Agreement (DUA). Instead, we provide:
+
+1. A sample data generator (`create_sample_data.py`) to create synthetic data in the same format
+2. A data cleaning tool (`clean_data.py`) for managing dataset files
+3. A convenient management script (`manage_data.sh`) for all data operations
+
+```bash
+# Generate synthetic sample data
+./manage_data.sh create-sample
+
+# Remove real data but keep sample data
+./manage_data.sh clean-keep
+
+# Display all commands
+./manage_data.sh help
+```
+
+See [SAMPLE_DATA_README.md](SAMPLE_DATA_README.md) for detailed information on working with the dataset.
 
 ## Running the APIs
 
@@ -154,7 +184,9 @@ Average API response time: 1.86ms
 
 ## Acknowledgments
 
-- CGM datasets from the [Ohio T1DM Dataset](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881904/)
+- The project uses a synthetic dataset that mimics the structure and format of the [Ohio T1DM Dataset](https://pmc.ncbi.nlm.nih.gov/articles/PMC7881904/)
+- For research purposes, the actual OhioT1DM dataset requires a Data Use Agreement (DUA)
+- See [SAMPLE_DATA_README.md](SAMPLE_DATA_README.md) for information on the sample data and how to obtain the real dataset
 - Clarke Error Grid implementation adapted from multiple sources
 
 ## License

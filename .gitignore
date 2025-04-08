@@ -84,4 +84,17 @@ api_comparison_results_*.json
 
 # Keep only sample data files
 # Uncomment below line if you want to exclude large data files
-# features/20*_*_features*.csv 
+# features/20*_*_features*.csv
+
+# OhioT1DM Dataset files
+DATA/2018/**/*.xml
+DATA/2020/**/*.xml
+# Keep the DATA directory structure but exclude the actual data files
+!DATA/
+!DATA/2018/
+!DATA/2018/Train/
+!DATA/2018/Test/
+!DATA/2020/
+!DATA/2020/Train/
+!DATA/2020/Test/
+!DATA/README.md 
