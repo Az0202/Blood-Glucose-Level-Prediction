@@ -1,639 +1,645 @@
 <?xml version="1.0" ?>
-<patient id="552">
-  <glucose_level ts="1577836800" value="82"/>
-  <glucose_level ts="1577837100" value="85"/>
-  <glucose_level ts="1577837400" value="84"/>
-  <glucose_level ts="1577837700" value="86"/>
-  <glucose_level ts="1577838000" value="82"/>
-  <glucose_level ts="1577838300" value="85"/>
-  <glucose_level ts="1577838600" value="84"/>
-  <glucose_level ts="1577838900" value="81"/>
-  <glucose_level ts="1577839200" value="88"/>
-  <glucose_level ts="1577839500" value="86"/>
-  <glucose_level ts="1577839800" value="75"/>
-  <glucose_level ts="1577840100" value="72"/>
-  <glucose_level ts="1577840400" value="83"/>
-  <glucose_level ts="1577840700" value="79"/>
-  <glucose_level ts="1577841000" value="83"/>
-  <glucose_level ts="1577841300" value="85"/>
-  <glucose_level ts="1577841600" value="77"/>
-  <glucose_level ts="1577841900" value="85"/>
-  <glucose_level ts="1577842200" value="72"/>
-  <glucose_level ts="1577842500" value="85"/>
-  <glucose_level ts="1577842800" value="83"/>
-  <glucose_level ts="1577843100" value="67"/>
-  <glucose_level ts="1577843400" value="79"/>
-  <glucose_level ts="1577843700" value="76"/>
-  <glucose_level ts="1577844000" value="73"/>
-  <glucose_level ts="1577844300" value="81"/>
-  <glucose_level ts="1577844600" value="66"/>
-  <glucose_level ts="1577844900" value="83"/>
-  <glucose_level ts="1577845200" value="75"/>
-  <glucose_level ts="1577845500" value="83"/>
-  <glucose_level ts="1577845800" value="80"/>
-  <glucose_level ts="1577846100" value="83"/>
-  <glucose_level ts="1577846400" value="75"/>
-  <glucose_level ts="1577846700" value="88"/>
-  <glucose_level ts="1577847000" value="80"/>
-  <glucose_level ts="1577847300" value="78"/>
-  <glucose_level ts="1577847600" value="84"/>
-  <glucose_level ts="1577847900" value="78"/>
-  <glucose_level ts="1577848200" value="86"/>
-  <glucose_level ts="1577848500" value="81"/>
-  <glucose_level ts="1577848800" value="79"/>
-  <glucose_level ts="1577849100" value="86"/>
-  <glucose_level ts="1577849400" value="87"/>
-  <glucose_level ts="1577849700" value="84"/>
-  <glucose_level ts="1577850000" value="92"/>
-  <glucose_level ts="1577850300" value="89"/>
-  <glucose_level ts="1577850600" value="85"/>
-  <glucose_level ts="1577850900" value="86"/>
-  <glucose_level ts="1577851200" value="95"/>
-  <glucose_level ts="1577851500" value="97"/>
-  <glucose_level ts="1577851800" value="91"/>
-  <glucose_level ts="1577852100" value="89"/>
-  <glucose_level ts="1577852400" value="93"/>
-  <glucose_level ts="1577852700" value="89"/>
-  <glucose_level ts="1577853000" value="95"/>
-  <glucose_level ts="1577853300" value="93"/>
-  <glucose_level ts="1577853600" value="102"/>
-  <glucose_level ts="1577853900" value="104"/>
-  <glucose_level ts="1577854200" value="103"/>
-  <glucose_level ts="1577854500" value="109"/>
-  <glucose_level ts="1577854800" value="97"/>
-  <glucose_level ts="1577855100" value="113"/>
-  <glucose_level ts="1577855400" value="115"/>
-  <glucose_level ts="1577855700" value="119"/>
-  <glucose_level ts="1577856000" value="109"/>
-  <glucose_level ts="1577856300" value="104"/>
-  <glucose_level ts="1577856600" value="108"/>
-  <glucose_level ts="1577856900" value="137"/>
-  <glucose_level ts="1577857200" value="132"/>
-  <glucose_level ts="1577857500" value="158"/>
-  <glucose_level ts="1577857800" value="146"/>
-  <glucose_level ts="1577858100" value="139"/>
-  <glucose_level ts="1577858400" value="123"/>
-  <glucose_level ts="1577858700" value="163"/>
-  <glucose_level ts="1577859000" value="119"/>
-  <glucose_level ts="1577859300" value="172"/>
-  <glucose_level ts="1577859600" value="155"/>
-  <glucose_level ts="1577859900" value="151"/>
-  <glucose_level ts="1577860200" value="161"/>
-  <glucose_level ts="1577860500" value="126"/>
-  <glucose_level ts="1577860800" value="156"/>
-  <glucose_level ts="1577861100" value="171"/>
-  <glucose_level ts="1577861400" value="177"/>
-  <glucose_level ts="1577861700" value="146"/>
-  <glucose_level ts="1577862000" value="172"/>
-  <glucose_level ts="1577862300" value="159"/>
-  <glucose_level ts="1577862600" value="169"/>
-  <glucose_level ts="1577862900" value="139"/>
-  <glucose_level ts="1577863200" value="143"/>
-  <glucose_level ts="1577863500" value="169"/>
-  <glucose_level ts="1577863800" value="176"/>
-  <glucose_level ts="1577864100" value="170"/>
-  <glucose_level ts="1577864400" value="161"/>
-  <glucose_level ts="1577864700" value="167"/>
-  <glucose_level ts="1577865000" value="182"/>
-  <glucose_level ts="1577865300" value="169"/>
-  <glucose_level ts="1577865600" value="135"/>
-  <glucose_level ts="1577865900" value="173"/>
-  <glucose_level ts="1577866200" value="162"/>
-  <glucose_level ts="1577866500" value="127"/>
-  <glucose_level ts="1577866800" value="124"/>
-  <glucose_level ts="1577867100" value="133"/>
-  <glucose_level ts="1577867400" value="119"/>
-  <glucose_level ts="1577867700" value="127"/>
-  <glucose_level ts="1577868000" value="119"/>
-  <glucose_level ts="1577868300" value="119"/>
-  <glucose_level ts="1577868600" value="121"/>
-  <glucose_level ts="1577868900" value="110"/>
-  <glucose_level ts="1577869200" value="128"/>
-  <glucose_level ts="1577869500" value="125"/>
-  <glucose_level ts="1577869800" value="115"/>
-  <glucose_level ts="1577870100" value="109"/>
-  <glucose_level ts="1577870400" value="112"/>
-  <glucose_level ts="1577870700" value="117"/>
-  <glucose_level ts="1577871000" value="115"/>
-  <glucose_level ts="1577871300" value="110"/>
-  <glucose_level ts="1577871600" value="107"/>
-  <glucose_level ts="1577871900" value="113"/>
-  <glucose_level ts="1577872200" value="118"/>
-  <glucose_level ts="1577872500" value="112"/>
-  <glucose_level ts="1577872800" value="101"/>
-  <glucose_level ts="1577873100" value="115"/>
-  <glucose_level ts="1577873400" value="92"/>
-  <glucose_level ts="1577873700" value="105"/>
-  <glucose_level ts="1577874000" value="102"/>
-  <glucose_level ts="1577874300" value="105"/>
-  <glucose_level ts="1577874600" value="100"/>
-  <glucose_level ts="1577874900" value="106"/>
-  <glucose_level ts="1577875200" value="95"/>
-  <glucose_level ts="1577875500" value="108"/>
-  <glucose_level ts="1577875800" value="135"/>
-  <glucose_level ts="1577876100" value="122"/>
-  <glucose_level ts="1577876400" value="142"/>
-  <glucose_level ts="1577876700" value="137"/>
-  <glucose_level ts="1577877000" value="146"/>
-  <glucose_level ts="1577877300" value="137"/>
-  <glucose_level ts="1577877600" value="139"/>
-  <glucose_level ts="1577877900" value="142"/>
-  <glucose_level ts="1577878200" value="155"/>
-  <glucose_level ts="1577878500" value="130"/>
-  <glucose_level ts="1577878800" value="147"/>
-  <glucose_level ts="1577879100" value="147"/>
-  <glucose_level ts="1577879400" value="140"/>
-  <glucose_level ts="1577879700" value="134"/>
-  <glucose_level ts="1577880000" value="135"/>
-  <glucose_level ts="1577880300" value="147"/>
-  <glucose_level ts="1577880600" value="148"/>
-  <glucose_level ts="1577880900" value="150"/>
-  <glucose_level ts="1577881200" value="151"/>
-  <glucose_level ts="1577881500" value="159"/>
-  <glucose_level ts="1577881800" value="114"/>
-  <glucose_level ts="1577882100" value="133"/>
-  <glucose_level ts="1577882400" value="117"/>
-  <glucose_level ts="1577882700" value="145"/>
-  <glucose_level ts="1577883000" value="102"/>
-  <glucose_level ts="1577883300" value="97"/>
-  <glucose_level ts="1577883600" value="111"/>
-  <glucose_level ts="1577883900" value="102"/>
-  <glucose_level ts="1577884200" value="131"/>
-  <glucose_level ts="1577884500" value="121"/>
-  <glucose_level ts="1577884800" value="99"/>
-  <glucose_level ts="1577885100" value="100"/>
-  <glucose_level ts="1577885400" value="96"/>
-  <glucose_level ts="1577885700" value="106"/>
-  <glucose_level ts="1577886000" value="108"/>
-  <glucose_level ts="1577886300" value="103"/>
-  <glucose_level ts="1577886600" value="97"/>
-  <glucose_level ts="1577886900" value="104"/>
-  <glucose_level ts="1577887200" value="99"/>
-  <glucose_level ts="1577887500" value="101"/>
-  <glucose_level ts="1577887800" value="99"/>
-  <glucose_level ts="1577888100" value="104"/>
-  <glucose_level ts="1577888400" value="101"/>
-  <glucose_level ts="1577888700" value="99"/>
-  <glucose_level ts="1577889000" value="98"/>
-  <glucose_level ts="1577889300" value="100"/>
-  <glucose_level ts="1577889600" value="98"/>
-  <glucose_level ts="1577889900" value="102"/>
-  <glucose_level ts="1577890200" value="96"/>
-  <glucose_level ts="1577890500" value="100"/>
-  <glucose_level ts="1577890800" value="92"/>
-  <glucose_level ts="1577891100" value="106"/>
-  <glucose_level ts="1577891400" value="102"/>
-  <glucose_level ts="1577891700" value="94"/>
-  <glucose_level ts="1577892000" value="103"/>
-  <glucose_level ts="1577892300" value="102"/>
-  <glucose_level ts="1577892600" value="95"/>
-  <glucose_level ts="1577892900" value="98"/>
-  <glucose_level ts="1577893200" value="102"/>
-  <glucose_level ts="1577893500" value="101"/>
-  <glucose_level ts="1577893800" value="96"/>
-  <glucose_level ts="1577894100" value="104"/>
-  <glucose_level ts="1577894400" value="101"/>
-  <glucose_level ts="1577894700" value="91"/>
-  <glucose_level ts="1577895000" value="106"/>
-  <glucose_level ts="1577895300" value="98"/>
-  <glucose_level ts="1577895600" value="103"/>
-  <glucose_level ts="1577895900" value="99"/>
-  <glucose_level ts="1577896200" value="104"/>
-  <glucose_level ts="1577896500" value="142"/>
-  <glucose_level ts="1577896800" value="109"/>
-  <glucose_level ts="1577897100" value="109"/>
-  <glucose_level ts="1577897400" value="116"/>
-  <glucose_level ts="1577897700" value="109"/>
-  <glucose_level ts="1577898000" value="118"/>
-  <glucose_level ts="1577898300" value="130"/>
-  <glucose_level ts="1577898600" value="134"/>
-  <glucose_level ts="1577898900" value="116"/>
-  <glucose_level ts="1577899200" value="139"/>
-  <glucose_level ts="1577899500" value="134"/>
-  <glucose_level ts="1577899800" value="118"/>
-  <glucose_level ts="1577900100" value="134"/>
-  <glucose_level ts="1577900400" value="129"/>
-  <glucose_level ts="1577900700" value="140"/>
-  <glucose_level ts="1577901000" value="153"/>
-  <glucose_level ts="1577901300" value="133"/>
-  <glucose_level ts="1577901600" value="135"/>
-  <glucose_level ts="1577901900" value="129"/>
-  <glucose_level ts="1577902200" value="162"/>
-  <glucose_level ts="1577902500" value="153"/>
-  <glucose_level ts="1577902800" value="121"/>
-  <glucose_level ts="1577903100" value="118"/>
-  <glucose_level ts="1577903400" value="138"/>
-  <glucose_level ts="1577903700" value="113"/>
-  <glucose_level ts="1577904000" value="124"/>
-  <glucose_level ts="1577904300" value="127"/>
-  <glucose_level ts="1577904600" value="121"/>
-  <glucose_level ts="1577904900" value="141"/>
-  <glucose_level ts="1577905200" value="125"/>
-  <glucose_level ts="1577905500" value="131"/>
-  <glucose_level ts="1577905800" value="128"/>
-  <glucose_level ts="1577906100" value="102"/>
-  <glucose_level ts="1577906400" value="93"/>
-  <glucose_level ts="1577906700" value="110"/>
-  <glucose_level ts="1577907000" value="95"/>
-  <glucose_level ts="1577907300" value="107"/>
-  <glucose_level ts="1577907600" value="94"/>
-  <glucose_level ts="1577907900" value="103"/>
-  <glucose_level ts="1577908200" value="106"/>
-  <glucose_level ts="1577908500" value="103"/>
-  <glucose_level ts="1577908800" value="113"/>
-  <glucose_level ts="1577909100" value="97"/>
-  <glucose_level ts="1577909400" value="103"/>
-  <glucose_level ts="1577909700" value="89"/>
-  <glucose_level ts="1577910000" value="99"/>
-  <glucose_level ts="1577910300" value="91"/>
-  <glucose_level ts="1577910600" value="96"/>
-  <glucose_level ts="1577910900" value="93"/>
-  <glucose_level ts="1577911200" value="99"/>
-  <glucose_level ts="1577911500" value="100"/>
-  <glucose_level ts="1577911800" value="108"/>
-  <glucose_level ts="1577912100" value="101"/>
-  <glucose_level ts="1577912400" value="97"/>
-  <glucose_level ts="1577912700" value="104"/>
-  <glucose_level ts="1577913000" value="100"/>
-  <glucose_level ts="1577913300" value="102"/>
-  <glucose_level ts="1577913600" value="100"/>
-  <glucose_level ts="1577913900" value="106"/>
-  <glucose_level ts="1577914200" value="86"/>
-  <glucose_level ts="1577914500" value="106"/>
-  <glucose_level ts="1577914800" value="104"/>
-  <glucose_level ts="1577915100" value="101"/>
-  <glucose_level ts="1577915400" value="102"/>
-  <glucose_level ts="1577915700" value="97"/>
-  <glucose_level ts="1577916000" value="101"/>
-  <glucose_level ts="1577916300" value="98"/>
-  <glucose_level ts="1577916600" value="106"/>
-  <glucose_level ts="1577916900" value="100"/>
-  <glucose_level ts="1577917200" value="90"/>
-  <glucose_level ts="1577917500" value="101"/>
-  <glucose_level ts="1577917800" value="99"/>
-  <glucose_level ts="1577918100" value="93"/>
-  <glucose_level ts="1577918400" value="104"/>
-  <glucose_level ts="1577918700" value="94"/>
-  <glucose_level ts="1577919000" value="94"/>
-  <glucose_level ts="1577919300" value="106"/>
-  <glucose_level ts="1577919600" value="100"/>
-  <glucose_level ts="1577919900" value="103"/>
-  <glucose_level ts="1577920200" value="100"/>
-  <glucose_level ts="1577920500" value="94"/>
-  <glucose_level ts="1577920800" value="111"/>
-  <glucose_level ts="1577921100" value="92"/>
-  <glucose_level ts="1577921400" value="106"/>
-  <glucose_level ts="1577921700" value="105"/>
-  <glucose_level ts="1577922000" value="102"/>
-  <glucose_level ts="1577922300" value="101"/>
-  <glucose_level ts="1577922600" value="92"/>
-  <glucose_level ts="1577922900" value="100"/>
-  <glucose_level ts="1577923200" value="86"/>
-  <glucose_level ts="1577923500" value="88"/>
-  <glucose_level ts="1577923800" value="86"/>
-  <glucose_level ts="1577924100" value="78"/>
-  <glucose_level ts="1577924400" value="80"/>
-  <glucose_level ts="1577924700" value="79"/>
-  <glucose_level ts="1577925000" value="88"/>
-  <glucose_level ts="1577925300" value="78"/>
-  <glucose_level ts="1577925600" value="84"/>
-  <glucose_level ts="1577925900" value="72"/>
-  <glucose_level ts="1577926200" value="78"/>
-  <glucose_level ts="1577926500" value="77"/>
-  <glucose_level ts="1577926800" value="83"/>
-  <glucose_level ts="1577927100" value="80"/>
-  <glucose_level ts="1577927400" value="83"/>
-  <glucose_level ts="1577927700" value="82"/>
-  <glucose_level ts="1577928000" value="76"/>
-  <glucose_level ts="1577928300" value="83"/>
-  <glucose_level ts="1577928600" value="81"/>
-  <glucose_level ts="1577928900" value="90"/>
-  <glucose_level ts="1577929200" value="87"/>
-  <glucose_level ts="1577929500" value="85"/>
-  <glucose_level ts="1577929800" value="82"/>
-  <glucose_level ts="1577930100" value="79"/>
-  <glucose_level ts="1577930400" value="74"/>
-  <glucose_level ts="1577930700" value="80"/>
-  <glucose_level ts="1577931000" value="82"/>
-  <glucose_level ts="1577931300" value="78"/>
-  <glucose_level ts="1577931600" value="73"/>
-  <glucose_level ts="1577931900" value="77"/>
-  <glucose_level ts="1577932200" value="84"/>
-  <glucose_level ts="1577932500" value="84"/>
-  <glucose_level ts="1577932800" value="84"/>
-  <glucose_level ts="1577933100" value="73"/>
-  <glucose_level ts="1577933400" value="93"/>
-  <glucose_level ts="1577933700" value="85"/>
-  <glucose_level ts="1577934000" value="82"/>
-  <glucose_level ts="1577934300" value="78"/>
-  <glucose_level ts="1577934600" value="87"/>
-  <glucose_level ts="1577934900" value="81"/>
-  <glucose_level ts="1577935200" value="80"/>
-  <glucose_level ts="1577935500" value="80"/>
-  <glucose_level ts="1577935800" value="76"/>
-  <glucose_level ts="1577936100" value="94"/>
-  <glucose_level ts="1577936400" value="95"/>
-  <glucose_level ts="1577936700" value="88"/>
-  <glucose_level ts="1577937000" value="87"/>
-  <glucose_level ts="1577937300" value="89"/>
-  <glucose_level ts="1577937600" value="97"/>
-  <glucose_level ts="1577937900" value="85"/>
-  <glucose_level ts="1577938200" value="96"/>
-  <glucose_level ts="1577938500" value="94"/>
-  <glucose_level ts="1577938800" value="87"/>
-  <glucose_level ts="1577939100" value="96"/>
-  <glucose_level ts="1577939400" value="98"/>
-  <glucose_level ts="1577939700" value="94"/>
-  <glucose_level ts="1577940000" value="101"/>
-  <glucose_level ts="1577940300" value="105"/>
-  <glucose_level ts="1577940600" value="107"/>
-  <glucose_level ts="1577940900" value="111"/>
-  <glucose_level ts="1577941200" value="106"/>
-  <glucose_level ts="1577941500" value="94"/>
-  <glucose_level ts="1577941800" value="113"/>
-  <glucose_level ts="1577942100" value="115"/>
-  <glucose_level ts="1577942400" value="122"/>
-  <glucose_level ts="1577942700" value="125"/>
-  <glucose_level ts="1577943000" value="120"/>
-  <glucose_level ts="1577943300" value="123"/>
-  <glucose_level ts="1577943600" value="161"/>
-  <glucose_level ts="1577943900" value="122"/>
-  <glucose_level ts="1577944200" value="114"/>
-  <glucose_level ts="1577944500" value="140"/>
-  <glucose_level ts="1577944800" value="163"/>
-  <glucose_level ts="1577945100" value="158"/>
-  <glucose_level ts="1577945400" value="159"/>
-  <glucose_level ts="1577945700" value="165"/>
-  <glucose_level ts="1577946000" value="122"/>
-  <glucose_level ts="1577946300" value="143"/>
-  <glucose_level ts="1577946600" value="134"/>
-  <glucose_level ts="1577946900" value="177"/>
-  <glucose_level ts="1577947200" value="169"/>
-  <glucose_level ts="1577947500" value="157"/>
-  <glucose_level ts="1577947800" value="176"/>
-  <glucose_level ts="1577948100" value="175"/>
-  <glucose_level ts="1577948400" value="186"/>
-  <glucose_level ts="1577948700" value="168"/>
-  <glucose_level ts="1577949000" value="175"/>
-  <glucose_level ts="1577949300" value="179"/>
-  <glucose_level ts="1577949600" value="173"/>
-  <glucose_level ts="1577949900" value="180"/>
-  <glucose_level ts="1577950200" value="176"/>
-  <glucose_level ts="1577950500" value="167"/>
-  <glucose_level ts="1577950800" value="165"/>
-  <glucose_level ts="1577951100" value="159"/>
-  <glucose_level ts="1577951400" value="138"/>
-  <glucose_level ts="1577951700" value="138"/>
-  <glucose_level ts="1577952000" value="131"/>
-  <glucose_level ts="1577952300" value="165"/>
-  <glucose_level ts="1577952600" value="151"/>
-  <glucose_level ts="1577952900" value="129"/>
-  <glucose_level ts="1577953200" value="134"/>
-  <glucose_level ts="1577953500" value="132"/>
-  <glucose_level ts="1577953800" value="145"/>
-  <glucose_level ts="1577954100" value="116"/>
-  <glucose_level ts="1577954400" value="126"/>
-  <glucose_level ts="1577954700" value="119"/>
-  <glucose_level ts="1577955000" value="125"/>
-  <glucose_level ts="1577955300" value="118"/>
-  <glucose_level ts="1577955600" value="119"/>
-  <glucose_level ts="1577955900" value="113"/>
-  <glucose_level ts="1577956200" value="114"/>
-  <glucose_level ts="1577956500" value="121"/>
-  <glucose_level ts="1577956800" value="108"/>
-  <glucose_level ts="1577957100" value="107"/>
-  <glucose_level ts="1577957400" value="101"/>
-  <glucose_level ts="1577957700" value="110"/>
-  <glucose_level ts="1577958000" value="113"/>
-  <glucose_level ts="1577958300" value="107"/>
-  <glucose_level ts="1577958600" value="105"/>
-  <glucose_level ts="1577958900" value="103"/>
-  <glucose_level ts="1577959200" value="110"/>
-  <glucose_level ts="1577959500" value="119"/>
-  <glucose_level ts="1577959800" value="110"/>
-  <glucose_level ts="1577960100" value="94"/>
-  <glucose_level ts="1577960400" value="90"/>
-  <glucose_level ts="1577960700" value="111"/>
-  <glucose_level ts="1577961000" value="112"/>
-  <glucose_level ts="1577961300" value="113"/>
-  <glucose_level ts="1577961600" value="123"/>
-  <glucose_level ts="1577961900" value="110"/>
-  <glucose_level ts="1577962200" value="110"/>
-  <glucose_level ts="1577962500" value="120"/>
-  <glucose_level ts="1577962800" value="114"/>
-  <glucose_level ts="1577963100" value="116"/>
-  <glucose_level ts="1577963400" value="133"/>
-  <glucose_level ts="1577963700" value="132"/>
-  <glucose_level ts="1577964000" value="156"/>
-  <glucose_level ts="1577964300" value="149"/>
-  <glucose_level ts="1577964600" value="101"/>
-  <glucose_level ts="1577964900" value="138"/>
-  <glucose_level ts="1577965200" value="145"/>
-  <glucose_level ts="1577965500" value="144"/>
-  <glucose_level ts="1577965800" value="143"/>
-  <glucose_level ts="1577966100" value="148"/>
-  <glucose_level ts="1577966400" value="144"/>
-  <glucose_level ts="1577966700" value="145"/>
-  <glucose_level ts="1577967000" value="141"/>
-  <glucose_level ts="1577967300" value="146"/>
-  <glucose_level ts="1577967600" value="158"/>
-  <glucose_level ts="1577967900" value="152"/>
-  <glucose_level ts="1577968200" value="128"/>
-  <glucose_level ts="1577968500" value="106"/>
-  <glucose_level ts="1577968800" value="96"/>
-  <glucose_level ts="1577969100" value="130"/>
-  <glucose_level ts="1577969400" value="140"/>
-  <glucose_level ts="1577969700" value="124"/>
-  <glucose_level ts="1577970000" value="132"/>
-  <glucose_level ts="1577970300" value="105"/>
-  <glucose_level ts="1577970600" value="132"/>
-  <glucose_level ts="1577970900" value="125"/>
-  <glucose_level ts="1577971200" value="107"/>
-  <glucose_level ts="1577971500" value="95"/>
-  <glucose_level ts="1577971800" value="117"/>
-  <glucose_level ts="1577972100" value="95"/>
-  <glucose_level ts="1577972400" value="98"/>
-  <glucose_level ts="1577972700" value="96"/>
-  <glucose_level ts="1577973000" value="105"/>
-  <glucose_level ts="1577973300" value="95"/>
-  <glucose_level ts="1577973600" value="119"/>
-  <glucose_level ts="1577973900" value="99"/>
-  <glucose_level ts="1577974200" value="98"/>
-  <glucose_level ts="1577974500" value="112"/>
-  <glucose_level ts="1577974800" value="100"/>
-  <glucose_level ts="1577975100" value="105"/>
-  <glucose_level ts="1577975400" value="101"/>
-  <glucose_level ts="1577975700" value="96"/>
-  <glucose_level ts="1577976000" value="105"/>
-  <glucose_level ts="1577976300" value="92"/>
-  <glucose_level ts="1577976600" value="103"/>
-  <glucose_level ts="1577976900" value="101"/>
-  <glucose_level ts="1577977200" value="94"/>
-  <glucose_level ts="1577977500" value="105"/>
-  <glucose_level ts="1577977800" value="90"/>
-  <glucose_level ts="1577978100" value="98"/>
-  <glucose_level ts="1577978400" value="110"/>
-  <glucose_level ts="1577978700" value="98"/>
-  <glucose_level ts="1577979000" value="103"/>
-  <glucose_level ts="1577979300" value="106"/>
-  <glucose_level ts="1577979600" value="104"/>
-  <glucose_level ts="1577979900" value="103"/>
-  <glucose_level ts="1577980200" value="107"/>
-  <glucose_level ts="1577980500" value="99"/>
-  <glucose_level ts="1577980800" value="101"/>
-  <glucose_level ts="1577981100" value="91"/>
-  <glucose_level ts="1577981400" value="96"/>
-  <glucose_level ts="1577981700" value="98"/>
-  <glucose_level ts="1577982000" value="109"/>
-  <glucose_level ts="1577982300" value="99"/>
-  <glucose_level ts="1577982600" value="120"/>
-  <glucose_level ts="1577982900" value="105"/>
-  <glucose_level ts="1577983200" value="92"/>
-  <glucose_level ts="1577983500" value="130"/>
-  <glucose_level ts="1577983800" value="122"/>
-  <glucose_level ts="1577984100" value="96"/>
-  <glucose_level ts="1577984400" value="119"/>
-  <glucose_level ts="1577984700" value="97"/>
-  <glucose_level ts="1577985000" value="124"/>
-  <glucose_level ts="1577985300" value="137"/>
-  <glucose_level ts="1577985600" value="114"/>
-  <glucose_level ts="1577985900" value="122"/>
-  <glucose_level ts="1577986200" value="152"/>
-  <glucose_level ts="1577986500" value="135"/>
-  <glucose_level ts="1577986800" value="128"/>
-  <glucose_level ts="1577987100" value="144"/>
-  <glucose_level ts="1577987400" value="126"/>
-  <glucose_level ts="1577987700" value="141"/>
-  <glucose_level ts="1577988000" value="133"/>
-  <glucose_level ts="1577988300" value="148"/>
-  <glucose_level ts="1577988600" value="134"/>
-  <glucose_level ts="1577988900" value="150"/>
-  <glucose_level ts="1577989200" value="148"/>
-  <glucose_level ts="1577989500" value="138"/>
-  <glucose_level ts="1577989800" value="135"/>
-  <glucose_level ts="1577990100" value="129"/>
-  <glucose_level ts="1577990400" value="136"/>
-  <glucose_level ts="1577990700" value="105"/>
-  <glucose_level ts="1577991000" value="104"/>
-  <glucose_level ts="1577991300" value="102"/>
-  <glucose_level ts="1577991600" value="135"/>
-  <glucose_level ts="1577991900" value="138"/>
-  <glucose_level ts="1577992200" value="117"/>
-  <glucose_level ts="1577992500" value="133"/>
-  <glucose_level ts="1577992800" value="116"/>
-  <glucose_level ts="1577993100" value="107"/>
-  <glucose_level ts="1577993400" value="119"/>
-  <glucose_level ts="1577993700" value="116"/>
-  <glucose_level ts="1577994000" value="103"/>
-  <glucose_level ts="1577994300" value="97"/>
-  <glucose_level ts="1577994600" value="101"/>
-  <glucose_level ts="1577994900" value="103"/>
-  <glucose_level ts="1577995200" value="118"/>
-  <glucose_level ts="1577995500" value="114"/>
-  <glucose_level ts="1577995800" value="98"/>
-  <glucose_level ts="1577996100" value="97"/>
-  <glucose_level ts="1577996400" value="94"/>
-  <glucose_level ts="1577996700" value="103"/>
-  <glucose_level ts="1577997000" value="97"/>
-  <glucose_level ts="1577997300" value="103"/>
-  <glucose_level ts="1577997600" value="103"/>
-  <glucose_level ts="1577997900" value="96"/>
-  <glucose_level ts="1577998200" value="103"/>
-  <glucose_level ts="1577998500" value="91"/>
-  <glucose_level ts="1577998800" value="98"/>
-  <glucose_level ts="1577999100" value="101"/>
-  <glucose_level ts="1577999400" value="108"/>
-  <glucose_level ts="1577999700" value="99"/>
-  <glucose_level ts="1578000000" value="88"/>
-  <glucose_level ts="1578000300" value="86"/>
-  <glucose_level ts="1578000600" value="104"/>
-  <glucose_level ts="1578000900" value="100"/>
-  <glucose_level ts="1578001200" value="101"/>
-  <glucose_level ts="1578001500" value="102"/>
-  <glucose_level ts="1578001800" value="93"/>
-  <glucose_level ts="1578002100" value="95"/>
-  <glucose_level ts="1578002400" value="109"/>
-  <glucose_level ts="1578002700" value="102"/>
-  <glucose_level ts="1578003000" value="98"/>
-  <glucose_level ts="1578003300" value="104"/>
-  <glucose_level ts="1578003600" value="99"/>
-  <glucose_level ts="1578003900" value="98"/>
-  <glucose_level ts="1578004200" value="103"/>
-  <glucose_level ts="1578004500" value="96"/>
-  <glucose_level ts="1578004800" value="104"/>
-  <glucose_level ts="1578005100" value="105"/>
-  <glucose_level ts="1578005400" value="97"/>
-  <glucose_level ts="1578005700" value="100"/>
-  <glucose_level ts="1578006000" value="97"/>
-  <glucose_level ts="1578006300" value="101"/>
-  <glucose_level ts="1578006600" value="100"/>
-  <glucose_level ts="1578006900" value="90"/>
-  <glucose_level ts="1578007200" value="88"/>
-  <glucose_level ts="1578007500" value="100"/>
-  <glucose_level ts="1578007800" value="96"/>
-  <glucose_level ts="1578008100" value="105"/>
-  <glucose_level ts="1578008400" value="89"/>
-  <glucose_level ts="1578008700" value="94"/>
-  <glucose_level ts="1578009000" value="96"/>
-  <glucose_level ts="1578009300" value="105"/>
-  <insulin ts="1577836800" dose="0.98" type="basal"/>
-  <insulin ts="1577840400" dose="1.05" type="basal"/>
-  <insulin ts="1577844000" dose="0.97" type="basal"/>
-  <insulin ts="1577847600" dose="1.0" type="basal"/>
-  <insulin ts="1577851200" dose="0.97" type="basal"/>
-  <insulin ts="1577854800" dose="1.04" type="basal"/>
-  <insulin ts="1577858400" dose="1.05" type="basal"/>
-  <insulin ts="1577861280" dose="4.46" type="bolus"/>
-  <insulin ts="1577862000" dose="0.97" type="basal"/>
-  <insulin ts="1577865600" dose="0.98" type="basal"/>
-  <insulin ts="1577869200" dose="0.96" type="basal"/>
-  <insulin ts="1577872800" dose="1.0" type="basal"/>
-  <insulin ts="1577876400" dose="1.05" type="basal"/>
-  <insulin ts="1577879160" dose="4.76" type="bolus"/>
-  <insulin ts="1577880000" dose="0.95" type="basal"/>
-  <insulin ts="1577883600" dose="1.0" type="basal"/>
-  <insulin ts="1577887200" dose="1.01" type="basal"/>
-  <insulin ts="1577890800" dose="0.95" type="basal"/>
-  <insulin ts="1577894400" dose="1.05" type="basal"/>
-  <insulin ts="1577898000" dose="1.0" type="basal"/>
-  <insulin ts="1577901600" dose="1.02" type="basal"/>
-  <insulin ts="1577902200" dose="6.23" type="bolus"/>
-  <insulin ts="1577905200" dose="0.96" type="basal"/>
-  <insulin ts="1577908800" dose="0.97" type="basal"/>
-  <insulin ts="1577912400" dose="1.01" type="basal"/>
-  <insulin ts="1577916000" dose="0.95" type="basal"/>
-  <insulin ts="1577919600" dose="1.01" type="basal"/>
-  <insulin ts="1577923200" dose="1.05" type="basal"/>
-  <insulin ts="1577926800" dose="1.02" type="basal"/>
-  <insulin ts="1577930400" dose="0.98" type="basal"/>
-  <insulin ts="1577934000" dose="0.96" type="basal"/>
-  <insulin ts="1577937600" dose="1.04" type="basal"/>
-  <insulin ts="1577941200" dose="1.0" type="basal"/>
-  <insulin ts="1577944800" dose="1.0" type="basal"/>
-  <insulin ts="1577948400" dose="1.02" type="basal"/>
-  <insulin ts="1577950080" dose="4.78" type="bolus"/>
-  <insulin ts="1577952000" dose="1.02" type="basal"/>
-  <insulin ts="1577955600" dose="0.95" type="basal"/>
-  <insulin ts="1577959200" dose="1.01" type="basal"/>
-  <insulin ts="1577962800" dose="0.99" type="basal"/>
-  <insulin ts="1577966400" dose="1.03" type="basal"/>
-  <insulin ts="1577967540" dose="5.2" type="bolus"/>
-  <insulin ts="1577970000" dose="1.01" type="basal"/>
-  <insulin ts="1577973600" dose="0.97" type="basal"/>
-  <insulin ts="1577977200" dose="1.05" type="basal"/>
-  <insulin ts="1577980800" dose="1.02" type="basal"/>
-  <insulin ts="1577984400" dose="1.05" type="basal"/>
-  <insulin ts="1577988000" dose="0.97" type="basal"/>
-  <insulin ts="1577989320" dose="7.09" type="bolus"/>
-  <insulin ts="1577991600" dose="0.98" type="basal"/>
-  <insulin ts="1577995200" dose="1.03" type="basal"/>
-  <insulin ts="1577998800" dose="0.99" type="basal"/>
-  <insulin ts="1578002400" dose="1.03" type="basal"/>
-  <insulin ts="1578006000" dose="0.97" type="basal"/>
-  <meal ts="1577861280" carbs="39"/>
-  <meal ts="1577879160" carbs="53"/>
-  <meal ts="1577902200" carbs="59"/>
-  <meal ts="1577950080" carbs="45"/>
-  <meal ts="1577967540" carbs="46"/>
-  <meal ts="1577989320" carbs="67"/>
+<patient id="552" weight="80.0" insulin_type="analog">
+  <glucose_level>
+    <event ts="01-01-2020 00:00:00" value="83"/>
+    <event ts="01-01-2020 00:05:00" value="80"/>
+    <event ts="01-01-2020 00:10:00" value="84"/>
+    <event ts="01-01-2020 00:15:00" value="80"/>
+    <event ts="01-01-2020 00:20:00" value="87"/>
+    <event ts="01-01-2020 00:25:00" value="85"/>
+    <event ts="01-01-2020 00:30:00" value="87"/>
+    <event ts="01-01-2020 00:35:00" value="87"/>
+    <event ts="01-01-2020 00:40:00" value="85"/>
+    <event ts="01-01-2020 00:45:00" value="84"/>
+    <event ts="01-01-2020 00:50:00" value="80"/>
+    <event ts="01-01-2020 00:55:00" value="74"/>
+    <event ts="01-01-2020 01:00:00" value="94"/>
+    <event ts="01-01-2020 01:05:00" value="84"/>
+    <event ts="01-01-2020 01:10:00" value="74"/>
+    <event ts="01-01-2020 01:15:00" value="82"/>
+    <event ts="01-01-2020 01:20:00" value="83"/>
+    <event ts="01-01-2020 01:25:00" value="86"/>
+    <event ts="01-01-2020 01:30:00" value="70"/>
+    <event ts="01-01-2020 01:35:00" value="69"/>
+    <event ts="01-01-2020 01:40:00" value="74"/>
+    <event ts="01-01-2020 01:45:00" value="79"/>
+    <event ts="01-01-2020 01:50:00" value="83"/>
+    <event ts="01-01-2020 01:55:00" value="76"/>
+    <event ts="01-01-2020 02:00:00" value="90"/>
+    <event ts="01-01-2020 02:05:00" value="82"/>
+    <event ts="01-01-2020 02:10:00" value="83"/>
+    <event ts="01-01-2020 02:15:00" value="88"/>
+    <event ts="01-01-2020 02:20:00" value="90"/>
+    <event ts="01-01-2020 02:25:00" value="72"/>
+    <event ts="01-01-2020 02:30:00" value="85"/>
+    <event ts="01-01-2020 02:35:00" value="81"/>
+    <event ts="01-01-2020 02:40:00" value="80"/>
+    <event ts="01-01-2020 02:45:00" value="80"/>
+    <event ts="01-01-2020 02:50:00" value="78"/>
+    <event ts="01-01-2020 02:55:00" value="83"/>
+    <event ts="01-01-2020 03:00:00" value="76"/>
+    <event ts="01-01-2020 03:05:00" value="87"/>
+    <event ts="01-01-2020 03:10:00" value="85"/>
+    <event ts="01-01-2020 03:15:00" value="87"/>
+    <event ts="01-01-2020 03:20:00" value="84"/>
+    <event ts="01-01-2020 03:25:00" value="85"/>
+    <event ts="01-01-2020 03:30:00" value="84"/>
+    <event ts="01-01-2020 03:35:00" value="93"/>
+    <event ts="01-01-2020 03:40:00" value="92"/>
+    <event ts="01-01-2020 03:45:00" value="79"/>
+    <event ts="01-01-2020 03:50:00" value="91"/>
+    <event ts="01-01-2020 03:55:00" value="90"/>
+    <event ts="01-01-2020 04:00:00" value="96"/>
+    <event ts="01-01-2020 04:05:00" value="101"/>
+    <event ts="01-01-2020 04:10:00" value="88"/>
+    <event ts="01-01-2020 04:15:00" value="100"/>
+    <event ts="01-01-2020 04:20:00" value="95"/>
+    <event ts="01-01-2020 04:25:00" value="94"/>
+    <event ts="01-01-2020 04:30:00" value="95"/>
+    <event ts="01-01-2020 04:35:00" value="104"/>
+    <event ts="01-01-2020 04:40:00" value="105"/>
+    <event ts="01-01-2020 04:45:00" value="117"/>
+    <event ts="01-01-2020 04:50:00" value="105"/>
+    <event ts="01-01-2020 04:55:00" value="109"/>
+    <event ts="01-01-2020 05:00:00" value="106"/>
+    <event ts="01-01-2020 05:05:00" value="110"/>
+    <event ts="01-01-2020 05:10:00" value="111"/>
+    <event ts="01-01-2020 05:15:00" value="114"/>
+    <event ts="01-01-2020 05:20:00" value="125"/>
+    <event ts="01-01-2020 05:25:00" value="121"/>
+    <event ts="01-01-2020 05:30:00" value="106"/>
+    <event ts="01-01-2020 05:35:00" value="130"/>
+    <event ts="01-01-2020 05:40:00" value="164"/>
+    <event ts="01-01-2020 05:45:00" value="148"/>
+    <event ts="01-01-2020 05:50:00" value="142"/>
+    <event ts="01-01-2020 05:55:00" value="170"/>
+    <event ts="01-01-2020 06:00:00" value="122"/>
+    <event ts="01-01-2020 06:05:00" value="129"/>
+    <event ts="01-01-2020 06:10:00" value="124"/>
+    <event ts="01-01-2020 06:15:00" value="152"/>
+    <event ts="01-01-2020 06:20:00" value="157"/>
+    <event ts="01-01-2020 06:25:00" value="156"/>
+    <event ts="01-01-2020 06:30:00" value="165"/>
+    <event ts="01-01-2020 06:35:00" value="164"/>
+    <event ts="01-01-2020 06:40:00" value="141"/>
+    <event ts="01-01-2020 06:45:00" value="173"/>
+    <event ts="01-01-2020 06:50:00" value="170"/>
+    <event ts="01-01-2020 06:55:00" value="152"/>
+    <event ts="01-01-2020 07:00:00" value="170"/>
+    <event ts="01-01-2020 07:05:00" value="164"/>
+    <event ts="01-01-2020 07:10:00" value="188"/>
+    <event ts="01-01-2020 07:15:00" value="178"/>
+    <event ts="01-01-2020 07:20:00" value="127"/>
+    <event ts="01-01-2020 07:25:00" value="167"/>
+    <event ts="01-01-2020 07:30:00" value="147"/>
+    <event ts="01-01-2020 07:35:00" value="146"/>
+    <event ts="01-01-2020 07:40:00" value="141"/>
+    <event ts="01-01-2020 07:45:00" value="169"/>
+    <event ts="01-01-2020 07:50:00" value="161"/>
+    <event ts="01-01-2020 07:55:00" value="134"/>
+    <event ts="01-01-2020 08:00:00" value="125"/>
+    <event ts="01-01-2020 08:05:00" value="166"/>
+    <event ts="01-01-2020 08:10:00" value="152"/>
+    <event ts="01-01-2020 08:15:00" value="140"/>
+    <event ts="01-01-2020 08:20:00" value="131"/>
+    <event ts="01-01-2020 08:25:00" value="119"/>
+    <event ts="01-01-2020 08:30:00" value="122"/>
+    <event ts="01-01-2020 08:35:00" value="121"/>
+    <event ts="01-01-2020 08:40:00" value="119"/>
+    <event ts="01-01-2020 08:45:00" value="119"/>
+    <event ts="01-01-2020 08:50:00" value="110"/>
+    <event ts="01-01-2020 08:55:00" value="119"/>
+    <event ts="01-01-2020 09:00:00" value="113"/>
+    <event ts="01-01-2020 09:05:00" value="111"/>
+    <event ts="01-01-2020 09:10:00" value="115"/>
+    <event ts="01-01-2020 09:15:00" value="110"/>
+    <event ts="01-01-2020 09:20:00" value="109"/>
+    <event ts="01-01-2020 09:25:00" value="109"/>
+    <event ts="01-01-2020 09:30:00" value="120"/>
+    <event ts="01-01-2020 09:35:00" value="114"/>
+    <event ts="01-01-2020 09:40:00" value="109"/>
+    <event ts="01-01-2020 09:45:00" value="103"/>
+    <event ts="01-01-2020 09:50:00" value="111"/>
+    <event ts="01-01-2020 09:55:00" value="111"/>
+    <event ts="01-01-2020 10:00:00" value="110"/>
+    <event ts="01-01-2020 10:05:00" value="108"/>
+    <event ts="01-01-2020 10:10:00" value="109"/>
+    <event ts="01-01-2020 10:15:00" value="106"/>
+    <event ts="01-01-2020 10:20:00" value="129"/>
+    <event ts="01-01-2020 10:25:00" value="110"/>
+    <event ts="01-01-2020 10:30:00" value="108"/>
+    <event ts="01-01-2020 10:35:00" value="139"/>
+    <event ts="01-01-2020 10:40:00" value="115"/>
+    <event ts="01-01-2020 10:45:00" value="142"/>
+    <event ts="01-01-2020 10:50:00" value="123"/>
+    <event ts="01-01-2020 10:55:00" value="105"/>
+    <event ts="01-01-2020 11:00:00" value="106"/>
+    <event ts="01-01-2020 11:05:00" value="125"/>
+    <event ts="01-01-2020 11:10:00" value="128"/>
+    <event ts="01-01-2020 11:15:00" value="108"/>
+    <event ts="01-01-2020 11:20:00" value="129"/>
+    <event ts="01-01-2020 11:25:00" value="139"/>
+    <event ts="01-01-2020 11:30:00" value="147"/>
+    <event ts="01-01-2020 11:35:00" value="153"/>
+    <event ts="01-01-2020 11:40:00" value="150"/>
+    <event ts="01-01-2020 11:45:00" value="146"/>
+    <event ts="01-01-2020 11:50:00" value="150"/>
+    <event ts="01-01-2020 11:55:00" value="118"/>
+    <event ts="01-01-2020 12:00:00" value="135"/>
+    <event ts="01-01-2020 12:05:00" value="138"/>
+    <event ts="01-01-2020 12:10:00" value="118"/>
+    <event ts="01-01-2020 12:15:00" value="141"/>
+    <event ts="01-01-2020 12:20:00" value="150"/>
+    <event ts="01-01-2020 12:25:00" value="152"/>
+    <event ts="01-01-2020 12:30:00" value="142"/>
+    <event ts="01-01-2020 12:35:00" value="138"/>
+    <event ts="01-01-2020 12:40:00" value="157"/>
+    <event ts="01-01-2020 12:45:00" value="138"/>
+    <event ts="01-01-2020 12:50:00" value="115"/>
+    <event ts="01-01-2020 12:55:00" value="108"/>
+    <event ts="01-01-2020 13:00:00" value="102"/>
+    <event ts="01-01-2020 13:05:00" value="117"/>
+    <event ts="01-01-2020 13:10:00" value="108"/>
+    <event ts="01-01-2020 13:15:00" value="94"/>
+    <event ts="01-01-2020 13:20:00" value="99"/>
+    <event ts="01-01-2020 13:25:00" value="107"/>
+    <event ts="01-01-2020 13:30:00" value="91"/>
+    <event ts="01-01-2020 13:35:00" value="93"/>
+    <event ts="01-01-2020 13:40:00" value="111"/>
+    <event ts="01-01-2020 13:45:00" value="100"/>
+    <event ts="01-01-2020 13:50:00" value="106"/>
+    <event ts="01-01-2020 13:55:00" value="97"/>
+    <event ts="01-01-2020 14:00:00" value="99"/>
+    <event ts="01-01-2020 14:05:00" value="103"/>
+    <event ts="01-01-2020 14:10:00" value="91"/>
+    <event ts="01-01-2020 14:15:00" value="100"/>
+    <event ts="01-01-2020 14:20:00" value="101"/>
+    <event ts="01-01-2020 14:25:00" value="107"/>
+    <event ts="01-01-2020 14:30:00" value="102"/>
+    <event ts="01-01-2020 14:35:00" value="104"/>
+    <event ts="01-01-2020 14:40:00" value="89"/>
+    <event ts="01-01-2020 14:45:00" value="102"/>
+    <event ts="01-01-2020 14:50:00" value="100"/>
+    <event ts="01-01-2020 14:55:00" value="95"/>
+    <event ts="01-01-2020 15:00:00" value="102"/>
+    <event ts="01-01-2020 15:05:00" value="107"/>
+    <event ts="01-01-2020 15:10:00" value="105"/>
+    <event ts="01-01-2020 15:15:00" value="105"/>
+    <event ts="01-01-2020 15:20:00" value="101"/>
+    <event ts="01-01-2020 15:25:00" value="109"/>
+    <event ts="01-01-2020 15:30:00" value="101"/>
+    <event ts="01-01-2020 15:35:00" value="98"/>
+    <event ts="01-01-2020 15:40:00" value="103"/>
+    <event ts="01-01-2020 15:45:00" value="109"/>
+    <event ts="01-01-2020 15:50:00" value="103"/>
+    <event ts="01-01-2020 15:55:00" value="97"/>
+    <event ts="01-01-2020 16:00:00" value="97"/>
+    <event ts="01-01-2020 16:05:00" value="110"/>
+    <event ts="01-01-2020 16:10:00" value="102"/>
+    <event ts="01-01-2020 16:15:00" value="105"/>
+    <event ts="01-01-2020 16:20:00" value="91"/>
+    <event ts="01-01-2020 16:25:00" value="105"/>
+    <event ts="01-01-2020 16:30:00" value="110"/>
+    <event ts="01-01-2020 16:35:00" value="120"/>
+    <event ts="01-01-2020 16:40:00" value="116"/>
+    <event ts="01-01-2020 16:45:00" value="125"/>
+    <event ts="01-01-2020 16:50:00" value="116"/>
+    <event ts="01-01-2020 16:55:00" value="106"/>
+    <event ts="01-01-2020 17:00:00" value="102"/>
+    <event ts="01-01-2020 17:05:00" value="119"/>
+    <event ts="01-01-2020 17:10:00" value="133"/>
+    <event ts="01-01-2020 17:15:00" value="113"/>
+    <event ts="01-01-2020 17:20:00" value="116"/>
+    <event ts="01-01-2020 17:25:00" value="118"/>
+    <event ts="01-01-2020 17:30:00" value="115"/>
+    <event ts="01-01-2020 17:35:00" value="135"/>
+    <event ts="01-01-2020 17:40:00" value="130"/>
+    <event ts="01-01-2020 17:45:00" value="148"/>
+    <event ts="01-01-2020 17:50:00" value="149"/>
+    <event ts="01-01-2020 17:55:00" value="151"/>
+    <event ts="01-01-2020 18:00:00" value="147"/>
+    <event ts="01-01-2020 18:05:00" value="136"/>
+    <event ts="01-01-2020 18:10:00" value="143"/>
+    <event ts="01-01-2020 18:15:00" value="144"/>
+    <event ts="01-01-2020 18:20:00" value="112"/>
+    <event ts="01-01-2020 18:25:00" value="128"/>
+    <event ts="01-01-2020 18:30:00" value="111"/>
+    <event ts="01-01-2020 18:35:00" value="133"/>
+    <event ts="01-01-2020 18:40:00" value="149"/>
+    <event ts="01-01-2020 18:45:00" value="131"/>
+    <event ts="01-01-2020 18:50:00" value="108"/>
+    <event ts="01-01-2020 18:55:00" value="143"/>
+    <event ts="01-01-2020 19:00:00" value="124"/>
+    <event ts="01-01-2020 19:05:00" value="98"/>
+    <event ts="01-01-2020 19:10:00" value="125"/>
+    <event ts="01-01-2020 19:15:00" value="105"/>
+    <event ts="01-01-2020 19:20:00" value="111"/>
+    <event ts="01-01-2020 19:25:00" value="109"/>
+    <event ts="01-01-2020 19:30:00" value="132"/>
+    <event ts="01-01-2020 19:35:00" value="108"/>
+    <event ts="01-01-2020 19:40:00" value="114"/>
+    <event ts="01-01-2020 19:45:00" value="111"/>
+    <event ts="01-01-2020 19:50:00" value="109"/>
+    <event ts="01-01-2020 19:55:00" value="97"/>
+    <event ts="01-01-2020 20:00:00" value="101"/>
+    <event ts="01-01-2020 20:05:00" value="112"/>
+    <event ts="01-01-2020 20:10:00" value="93"/>
+    <event ts="01-01-2020 20:15:00" value="102"/>
+    <event ts="01-01-2020 20:20:00" value="112"/>
+    <event ts="01-01-2020 20:25:00" value="97"/>
+    <event ts="01-01-2020 20:30:00" value="95"/>
+    <event ts="01-01-2020 20:35:00" value="95"/>
+    <event ts="01-01-2020 20:40:00" value="100"/>
+    <event ts="01-01-2020 20:45:00" value="99"/>
+    <event ts="01-01-2020 20:50:00" value="98"/>
+    <event ts="01-01-2020 20:55:00" value="99"/>
+    <event ts="01-01-2020 21:00:00" value="107"/>
+    <event ts="01-01-2020 21:05:00" value="97"/>
+    <event ts="01-01-2020 21:10:00" value="102"/>
+    <event ts="01-01-2020 21:15:00" value="102"/>
+    <event ts="01-01-2020 21:20:00" value="98"/>
+    <event ts="01-01-2020 21:25:00" value="90"/>
+    <event ts="01-01-2020 21:30:00" value="104"/>
+    <event ts="01-01-2020 21:35:00" value="101"/>
+    <event ts="01-01-2020 21:40:00" value="92"/>
+    <event ts="01-01-2020 21:45:00" value="94"/>
+    <event ts="01-01-2020 21:50:00" value="107"/>
+    <event ts="01-01-2020 21:55:00" value="99"/>
+    <event ts="01-01-2020 22:00:00" value="101"/>
+    <event ts="01-01-2020 22:05:00" value="103"/>
+    <event ts="01-01-2020 22:10:00" value="101"/>
+    <event ts="01-01-2020 22:15:00" value="106"/>
+    <event ts="01-01-2020 22:20:00" value="96"/>
+    <event ts="01-01-2020 22:25:00" value="91"/>
+    <event ts="01-01-2020 22:30:00" value="101"/>
+    <event ts="01-01-2020 22:35:00" value="101"/>
+    <event ts="01-01-2020 22:40:00" value="100"/>
+    <event ts="01-01-2020 22:45:00" value="103"/>
+    <event ts="01-01-2020 22:50:00" value="99"/>
+    <event ts="01-01-2020 22:55:00" value="104"/>
+    <event ts="01-01-2020 23:00:00" value="102"/>
+    <event ts="01-01-2020 23:05:00" value="108"/>
+    <event ts="01-01-2020 23:10:00" value="109"/>
+    <event ts="01-01-2020 23:15:00" value="100"/>
+    <event ts="01-01-2020 23:20:00" value="95"/>
+    <event ts="01-01-2020 23:25:00" value="105"/>
+    <event ts="01-01-2020 23:30:00" value="102"/>
+    <event ts="01-01-2020 23:35:00" value="95"/>
+    <event ts="01-01-2020 23:40:00" value="110"/>
+    <event ts="01-01-2020 23:45:00" value="101"/>
+    <event ts="01-01-2020 23:50:00" value="93"/>
+    <event ts="01-01-2020 23:55:00" value="103"/>
+    <event ts="02-01-2020 00:00:00" value="92"/>
+    <event ts="02-01-2020 00:05:00" value="80"/>
+    <event ts="02-01-2020 00:10:00" value="85"/>
+    <event ts="02-01-2020 00:15:00" value="84"/>
+    <event ts="02-01-2020 00:20:00" value="80"/>
+    <event ts="02-01-2020 00:25:00" value="86"/>
+    <event ts="02-01-2020 00:30:00" value="86"/>
+    <event ts="02-01-2020 00:35:00" value="85"/>
+    <event ts="02-01-2020 00:40:00" value="87"/>
+    <event ts="02-01-2020 00:45:00" value="80"/>
+    <event ts="02-01-2020 00:50:00" value="92"/>
+    <event ts="02-01-2020 00:55:00" value="81"/>
+    <event ts="02-01-2020 01:00:00" value="77"/>
+    <event ts="02-01-2020 01:05:00" value="65"/>
+    <event ts="02-01-2020 01:10:00" value="83"/>
+    <event ts="02-01-2020 01:15:00" value="83"/>
+    <event ts="02-01-2020 01:20:00" value="80"/>
+    <event ts="02-01-2020 01:25:00" value="82"/>
+    <event ts="02-01-2020 01:30:00" value="72"/>
+    <event ts="02-01-2020 01:35:00" value="85"/>
+    <event ts="02-01-2020 01:40:00" value="74"/>
+    <event ts="02-01-2020 01:45:00" value="73"/>
+    <event ts="02-01-2020 01:50:00" value="85"/>
+    <event ts="02-01-2020 01:55:00" value="74"/>
+    <event ts="02-01-2020 02:00:00" value="85"/>
+    <event ts="02-01-2020 02:05:00" value="86"/>
+    <event ts="02-01-2020 02:10:00" value="79"/>
+    <event ts="02-01-2020 02:15:00" value="81"/>
+    <event ts="02-01-2020 02:20:00" value="83"/>
+    <event ts="02-01-2020 02:25:00" value="79"/>
+    <event ts="02-01-2020 02:30:00" value="77"/>
+    <event ts="02-01-2020 02:35:00" value="77"/>
+    <event ts="02-01-2020 02:40:00" value="75"/>
+    <event ts="02-01-2020 02:45:00" value="86"/>
+    <event ts="02-01-2020 02:50:00" value="85"/>
+    <event ts="02-01-2020 02:55:00" value="78"/>
+    <event ts="02-01-2020 03:00:00" value="81"/>
+    <event ts="02-01-2020 03:05:00" value="72"/>
+    <event ts="02-01-2020 03:10:00" value="89"/>
+    <event ts="02-01-2020 03:15:00" value="82"/>
+    <event ts="02-01-2020 03:20:00" value="80"/>
+    <event ts="02-01-2020 03:25:00" value="89"/>
+    <event ts="02-01-2020 03:30:00" value="94"/>
+    <event ts="02-01-2020 03:35:00" value="79"/>
+    <event ts="02-01-2020 03:40:00" value="88"/>
+    <event ts="02-01-2020 03:45:00" value="86"/>
+    <event ts="02-01-2020 03:50:00" value="88"/>
+    <event ts="02-01-2020 03:55:00" value="82"/>
+    <event ts="02-01-2020 04:00:00" value="88"/>
+    <event ts="02-01-2020 04:05:00" value="97"/>
+    <event ts="02-01-2020 04:10:00" value="92"/>
+    <event ts="02-01-2020 04:15:00" value="96"/>
+    <event ts="02-01-2020 04:20:00" value="103"/>
+    <event ts="02-01-2020 04:25:00" value="92"/>
+    <event ts="02-01-2020 04:30:00" value="102"/>
+    <event ts="02-01-2020 04:35:00" value="92"/>
+    <event ts="02-01-2020 04:40:00" value="103"/>
+    <event ts="02-01-2020 04:45:00" value="100"/>
+    <event ts="02-01-2020 04:50:00" value="87"/>
+    <event ts="02-01-2020 04:55:00" value="112"/>
+    <event ts="02-01-2020 05:00:00" value="105"/>
+    <event ts="02-01-2020 05:05:00" value="113"/>
+    <event ts="02-01-2020 05:10:00" value="113"/>
+    <event ts="02-01-2020 05:15:00" value="113"/>
+    <event ts="02-01-2020 05:20:00" value="114"/>
+    <event ts="02-01-2020 05:25:00" value="118"/>
+    <event ts="02-01-2020 05:30:00" value="119"/>
+    <event ts="02-01-2020 05:35:00" value="124"/>
+    <event ts="02-01-2020 05:40:00" value="139"/>
+    <event ts="02-01-2020 05:45:00" value="146"/>
+    <event ts="02-01-2020 05:50:00" value="132"/>
+    <event ts="02-01-2020 05:55:00" value="153"/>
+    <event ts="02-01-2020 06:00:00" value="132"/>
+    <event ts="02-01-2020 06:05:00" value="165"/>
+    <event ts="02-01-2020 06:10:00" value="154"/>
+    <event ts="02-01-2020 06:15:00" value="142"/>
+    <event ts="02-01-2020 06:20:00" value="158"/>
+    <event ts="02-01-2020 06:25:00" value="175"/>
+    <event ts="02-01-2020 06:30:00" value="169"/>
+    <event ts="02-01-2020 06:35:00" value="179"/>
+    <event ts="02-01-2020 06:40:00" value="170"/>
+    <event ts="02-01-2020 06:45:00" value="158"/>
+    <event ts="02-01-2020 06:50:00" value="165"/>
+    <event ts="02-01-2020 06:55:00" value="176"/>
+    <event ts="02-01-2020 07:00:00" value="155"/>
+    <event ts="02-01-2020 07:05:00" value="161"/>
+    <event ts="02-01-2020 07:10:00" value="175"/>
+    <event ts="02-01-2020 07:15:00" value="169"/>
+    <event ts="02-01-2020 07:20:00" value="161"/>
+    <event ts="02-01-2020 07:25:00" value="158"/>
+    <event ts="02-01-2020 07:30:00" value="174"/>
+    <event ts="02-01-2020 07:35:00" value="133"/>
+    <event ts="02-01-2020 07:40:00" value="177"/>
+    <event ts="02-01-2020 07:45:00" value="140"/>
+    <event ts="02-01-2020 07:50:00" value="173"/>
+    <event ts="02-01-2020 07:55:00" value="163"/>
+    <event ts="02-01-2020 08:00:00" value="148"/>
+    <event ts="02-01-2020 08:05:00" value="142"/>
+    <event ts="02-01-2020 08:10:00" value="164"/>
+    <event ts="02-01-2020 08:15:00" value="130"/>
+    <event ts="02-01-2020 08:20:00" value="129"/>
+    <event ts="02-01-2020 08:25:00" value="121"/>
+    <event ts="02-01-2020 08:30:00" value="133"/>
+    <event ts="02-01-2020 08:35:00" value="131"/>
+    <event ts="02-01-2020 08:40:00" value="122"/>
+    <event ts="02-01-2020 08:45:00" value="106"/>
+    <event ts="02-01-2020 08:50:00" value="111"/>
+    <event ts="02-01-2020 08:55:00" value="114"/>
+    <event ts="02-01-2020 09:00:00" value="109"/>
+    <event ts="02-01-2020 09:05:00" value="110"/>
+    <event ts="02-01-2020 09:10:00" value="108"/>
+    <event ts="02-01-2020 09:15:00" value="112"/>
+    <event ts="02-01-2020 09:20:00" value="103"/>
+    <event ts="02-01-2020 09:25:00" value="109"/>
+    <event ts="02-01-2020 09:30:00" value="108"/>
+    <event ts="02-01-2020 09:35:00" value="109"/>
+    <event ts="02-01-2020 09:40:00" value="106"/>
+    <event ts="02-01-2020 09:45:00" value="104"/>
+    <event ts="02-01-2020 09:50:00" value="105"/>
+    <event ts="02-01-2020 09:55:00" value="115"/>
+    <event ts="02-01-2020 10:00:00" value="114"/>
+    <event ts="02-01-2020 10:05:00" value="100"/>
+    <event ts="02-01-2020 10:10:00" value="111"/>
+    <event ts="02-01-2020 10:15:00" value="106"/>
+    <event ts="02-01-2020 10:20:00" value="139"/>
+    <event ts="02-01-2020 10:25:00" value="95"/>
+    <event ts="02-01-2020 10:30:00" value="111"/>
+    <event ts="02-01-2020 10:35:00" value="141"/>
+    <event ts="02-01-2020 10:40:00" value="100"/>
+    <event ts="02-01-2020 10:45:00" value="132"/>
+    <event ts="02-01-2020 10:50:00" value="137"/>
+    <event ts="02-01-2020 10:55:00" value="105"/>
+    <event ts="02-01-2020 11:00:00" value="131"/>
+    <event ts="02-01-2020 11:05:00" value="117"/>
+    <event ts="02-01-2020 11:10:00" value="154"/>
+    <event ts="02-01-2020 11:15:00" value="136"/>
+    <event ts="02-01-2020 11:20:00" value="145"/>
+    <event ts="02-01-2020 11:25:00" value="154"/>
+    <event ts="02-01-2020 11:30:00" value="120"/>
+    <event ts="02-01-2020 11:35:00" value="126"/>
+    <event ts="02-01-2020 11:40:00" value="143"/>
+    <event ts="02-01-2020 11:45:00" value="152"/>
+    <event ts="02-01-2020 11:50:00" value="142"/>
+    <event ts="02-01-2020 11:55:00" value="142"/>
+    <event ts="02-01-2020 12:00:00" value="155"/>
+    <event ts="02-01-2020 12:05:00" value="141"/>
+    <event ts="02-01-2020 12:10:00" value="131"/>
+    <event ts="02-01-2020 12:15:00" value="147"/>
+    <event ts="02-01-2020 12:20:00" value="104"/>
+    <event ts="02-01-2020 12:25:00" value="127"/>
+    <event ts="02-01-2020 12:30:00" value="141"/>
+    <event ts="02-01-2020 12:35:00" value="152"/>
+    <event ts="02-01-2020 12:40:00" value="131"/>
+    <event ts="02-01-2020 12:45:00" value="154"/>
+    <event ts="02-01-2020 12:50:00" value="140"/>
+    <event ts="02-01-2020 12:55:00" value="145"/>
+    <event ts="02-01-2020 13:00:00" value="144"/>
+    <event ts="02-01-2020 13:05:00" value="100"/>
+    <event ts="02-01-2020 13:10:00" value="121"/>
+    <event ts="02-01-2020 13:15:00" value="100"/>
+    <event ts="02-01-2020 13:20:00" value="115"/>
+    <event ts="02-01-2020 13:25:00" value="102"/>
+    <event ts="02-01-2020 13:30:00" value="97"/>
+    <event ts="02-01-2020 13:35:00" value="92"/>
+    <event ts="02-01-2020 13:40:00" value="107"/>
+    <event ts="02-01-2020 13:45:00" value="101"/>
+    <event ts="02-01-2020 13:50:00" value="98"/>
+    <event ts="02-01-2020 13:55:00" value="104"/>
+    <event ts="02-01-2020 14:00:00" value="98"/>
+    <event ts="02-01-2020 14:05:00" value="118"/>
+    <event ts="02-01-2020 14:10:00" value="90"/>
+    <event ts="02-01-2020 14:15:00" value="104"/>
+    <event ts="02-01-2020 14:20:00" value="106"/>
+    <event ts="02-01-2020 14:25:00" value="108"/>
+    <event ts="02-01-2020 14:30:00" value="97"/>
+    <event ts="02-01-2020 14:35:00" value="97"/>
+    <event ts="02-01-2020 14:40:00" value="105"/>
+    <event ts="02-01-2020 14:45:00" value="99"/>
+    <event ts="02-01-2020 14:50:00" value="106"/>
+    <event ts="02-01-2020 14:55:00" value="107"/>
+    <event ts="02-01-2020 15:00:00" value="94"/>
+    <event ts="02-01-2020 15:05:00" value="98"/>
+    <event ts="02-01-2020 15:10:00" value="108"/>
+    <event ts="02-01-2020 15:15:00" value="90"/>
+    <event ts="02-01-2020 15:20:00" value="98"/>
+    <event ts="02-01-2020 15:25:00" value="106"/>
+    <event ts="02-01-2020 15:30:00" value="110"/>
+    <event ts="02-01-2020 15:35:00" value="93"/>
+    <event ts="02-01-2020 15:40:00" value="93"/>
+    <event ts="02-01-2020 15:45:00" value="101"/>
+    <event ts="02-01-2020 15:50:00" value="108"/>
+    <event ts="02-01-2020 15:55:00" value="108"/>
+    <event ts="02-01-2020 16:00:00" value="101"/>
+    <event ts="02-01-2020 16:05:00" value="92"/>
+    <event ts="02-01-2020 16:10:00" value="113"/>
+    <event ts="02-01-2020 16:15:00" value="125"/>
+    <event ts="02-01-2020 16:20:00" value="105"/>
+    <event ts="02-01-2020 16:25:00" value="114"/>
+    <event ts="02-01-2020 16:30:00" value="93"/>
+    <event ts="02-01-2020 16:35:00" value="97"/>
+    <event ts="02-01-2020 16:40:00" value="120"/>
+    <event ts="02-01-2020 16:45:00" value="109"/>
+    <event ts="02-01-2020 16:50:00" value="110"/>
+    <event ts="02-01-2020 16:55:00" value="94"/>
+    <event ts="02-01-2020 17:00:00" value="108"/>
+    <event ts="02-01-2020 17:05:00" value="122"/>
+    <event ts="02-01-2020 17:10:00" value="134"/>
+    <event ts="02-01-2020 17:15:00" value="111"/>
+    <event ts="02-01-2020 17:20:00" value="108"/>
+    <event ts="02-01-2020 17:25:00" value="132"/>
+    <event ts="02-01-2020 17:30:00" value="155"/>
+    <event ts="02-01-2020 17:35:00" value="143"/>
+    <event ts="02-01-2020 17:40:00" value="109"/>
+    <event ts="02-01-2020 17:45:00" value="112"/>
+    <event ts="02-01-2020 17:50:00" value="117"/>
+    <event ts="02-01-2020 17:55:00" value="151"/>
+    <event ts="02-01-2020 18:00:00" value="104"/>
+    <event ts="02-01-2020 18:05:00" value="127"/>
+    <event ts="02-01-2020 18:10:00" value="151"/>
+    <event ts="02-01-2020 18:15:00" value="142"/>
+    <event ts="02-01-2020 18:20:00" value="136"/>
+    <event ts="02-01-2020 18:25:00" value="154"/>
+    <event ts="02-01-2020 18:30:00" value="140"/>
+    <event ts="02-01-2020 18:35:00" value="103"/>
+    <event ts="02-01-2020 18:40:00" value="132"/>
+    <event ts="02-01-2020 18:45:00" value="121"/>
+    <event ts="02-01-2020 18:50:00" value="108"/>
+    <event ts="02-01-2020 18:55:00" value="103"/>
+    <event ts="02-01-2020 19:00:00" value="120"/>
+    <event ts="02-01-2020 19:05:00" value="125"/>
+    <event ts="02-01-2020 19:10:00" value="127"/>
+    <event ts="02-01-2020 19:15:00" value="104"/>
+    <event ts="02-01-2020 19:20:00" value="99"/>
+    <event ts="02-01-2020 19:25:00" value="100"/>
+    <event ts="02-01-2020 19:30:00" value="100"/>
+    <event ts="02-01-2020 19:35:00" value="97"/>
+    <event ts="02-01-2020 19:40:00" value="98"/>
+    <event ts="02-01-2020 19:45:00" value="108"/>
+    <event ts="02-01-2020 19:50:00" value="116"/>
+    <event ts="02-01-2020 19:55:00" value="101"/>
+    <event ts="02-01-2020 20:00:00" value="104"/>
+    <event ts="02-01-2020 20:05:00" value="108"/>
+    <event ts="02-01-2020 20:10:00" value="106"/>
+    <event ts="02-01-2020 20:15:00" value="98"/>
+    <event ts="02-01-2020 20:20:00" value="102"/>
+    <event ts="02-01-2020 20:25:00" value="95"/>
+    <event ts="02-01-2020 20:30:00" value="102"/>
+    <event ts="02-01-2020 20:35:00" value="111"/>
+    <event ts="02-01-2020 20:40:00" value="98"/>
+    <event ts="02-01-2020 20:45:00" value="105"/>
+    <event ts="02-01-2020 20:50:00" value="102"/>
+    <event ts="02-01-2020 20:55:00" value="93"/>
+    <event ts="02-01-2020 21:00:00" value="95"/>
+    <event ts="02-01-2020 21:05:00" value="101"/>
+    <event ts="02-01-2020 21:10:00" value="105"/>
+    <event ts="02-01-2020 21:15:00" value="106"/>
+    <event ts="02-01-2020 21:20:00" value="103"/>
+    <event ts="02-01-2020 21:25:00" value="99"/>
+    <event ts="02-01-2020 21:30:00" value="105"/>
+    <event ts="02-01-2020 21:35:00" value="97"/>
+    <event ts="02-01-2020 21:40:00" value="101"/>
+    <event ts="02-01-2020 21:45:00" value="90"/>
+    <event ts="02-01-2020 21:50:00" value="86"/>
+    <event ts="02-01-2020 21:55:00" value="99"/>
+    <event ts="02-01-2020 22:00:00" value="93"/>
+    <event ts="02-01-2020 22:05:00" value="98"/>
+    <event ts="02-01-2020 22:10:00" value="108"/>
+    <event ts="02-01-2020 22:15:00" value="104"/>
+    <event ts="02-01-2020 22:20:00" value="101"/>
+    <event ts="02-01-2020 22:25:00" value="93"/>
+    <event ts="02-01-2020 22:30:00" value="101"/>
+    <event ts="02-01-2020 22:35:00" value="105"/>
+    <event ts="02-01-2020 22:40:00" value="109"/>
+    <event ts="02-01-2020 22:45:00" value="93"/>
+    <event ts="02-01-2020 22:50:00" value="105"/>
+    <event ts="02-01-2020 22:55:00" value="99"/>
+    <event ts="02-01-2020 23:00:00" value="102"/>
+    <event ts="02-01-2020 23:05:00" value="106"/>
+    <event ts="02-01-2020 23:10:00" value="102"/>
+    <event ts="02-01-2020 23:15:00" value="94"/>
+    <event ts="02-01-2020 23:20:00" value="101"/>
+    <event ts="02-01-2020 23:25:00" value="101"/>
+    <event ts="02-01-2020 23:30:00" value="102"/>
+    <event ts="02-01-2020 23:35:00" value="94"/>
+    <event ts="02-01-2020 23:40:00" value="98"/>
+    <event ts="02-01-2020 23:45:00" value="99"/>
+    <event ts="02-01-2020 23:50:00" value="104"/>
+    <event ts="02-01-2020 23:55:00" value="101"/>
+  </glucose_level>
+  <insulin>
+    <event ts="01-01-2020 00:00:00" dose="0.98" type="basal"/>
+    <event ts="01-01-2020 01:00:00" dose="1.03" type="basal"/>
+    <event ts="01-01-2020 02:00:00" dose="1.01" type="basal"/>
+    <event ts="01-01-2020 03:00:00" dose="0.98" type="basal"/>
+    <event ts="01-01-2020 04:00:00" dose="1.04" type="basal"/>
+    <event ts="01-01-2020 05:00:00" dose="1.05" type="basal"/>
+    <event ts="01-01-2020 06:00:00" dose="1.0" type="basal"/>
+    <event ts="01-01-2020 06:30:00" dose="5.09" type="bolus"/>
+    <event ts="01-01-2020 07:00:00" dose="1.02" type="basal"/>
+    <event ts="01-01-2020 08:00:00" dose="1.0" type="basal"/>
+    <event ts="01-01-2020 09:00:00" dose="0.96" type="basal"/>
+    <event ts="01-01-2020 10:00:00" dose="1.0" type="basal"/>
+    <event ts="01-01-2020 11:00:00" dose="1.03" type="basal"/>
+    <event ts="01-01-2020 12:00:00" dose="1.0" type="basal"/>
+    <event ts="01-01-2020 12:28:00" dose="5.64" type="bolus"/>
+    <event ts="01-01-2020 13:00:00" dose="1.03" type="basal"/>
+    <event ts="01-01-2020 14:00:00" dose="0.95" type="basal"/>
+    <event ts="01-01-2020 15:00:00" dose="0.96" type="basal"/>
+    <event ts="01-01-2020 16:00:00" dose="1.03" type="basal"/>
+    <event ts="01-01-2020 17:00:00" dose="1.02" type="basal"/>
+    <event ts="01-01-2020 17:44:00" dose="6.44" type="bolus"/>
+    <event ts="01-01-2020 18:00:00" dose="0.98" type="basal"/>
+    <event ts="01-01-2020 19:00:00" dose="0.97" type="basal"/>
+    <event ts="01-01-2020 20:00:00" dose="1.04" type="basal"/>
+    <event ts="01-01-2020 21:00:00" dose="0.99" type="basal"/>
+    <event ts="01-01-2020 22:00:00" dose="0.95" type="basal"/>
+    <event ts="01-01-2020 23:00:00" dose="0.97" type="basal"/>
+    <event ts="02-01-2020 00:00:00" dose="0.98" type="basal"/>
+    <event ts="02-01-2020 01:00:00" dose="0.98" type="basal"/>
+    <event ts="02-01-2020 02:00:00" dose="1.03" type="basal"/>
+    <event ts="02-01-2020 03:00:00" dose="1.0" type="basal"/>
+    <event ts="02-01-2020 04:00:00" dose="0.97" type="basal"/>
+    <event ts="02-01-2020 05:00:00" dose="1.04" type="basal"/>
+    <event ts="02-01-2020 06:00:00" dose="0.96" type="basal"/>
+    <event ts="02-01-2020 07:00:00" dose="0.97" type="basal"/>
+    <event ts="02-01-2020 07:23:00" dose="5.48" type="bolus"/>
+    <event ts="02-01-2020 08:00:00" dose="0.95" type="basal"/>
+    <event ts="02-01-2020 09:00:00" dose="0.98" type="basal"/>
+    <event ts="02-01-2020 10:00:00" dose="1.03" type="basal"/>
+    <event ts="02-01-2020 11:00:00" dose="0.99" type="basal"/>
+    <event ts="02-01-2020 11:54:00" dose="4.76" type="bolus"/>
+    <event ts="02-01-2020 12:00:00" dose="0.98" type="basal"/>
+    <event ts="02-01-2020 13:00:00" dose="0.98" type="basal"/>
+    <event ts="02-01-2020 14:00:00" dose="1.0" type="basal"/>
+    <event ts="02-01-2020 15:00:00" dose="1.04" type="basal"/>
+    <event ts="02-01-2020 16:00:00" dose="1.01" type="basal"/>
+    <event ts="02-01-2020 17:00:00" dose="0.95" type="basal"/>
+    <event ts="02-01-2020 18:00:00" dose="1.05" type="basal"/>
+    <event ts="02-01-2020 18:14:00" dose="6.59" type="bolus"/>
+    <event ts="02-01-2020 19:00:00" dose="1.0" type="basal"/>
+    <event ts="02-01-2020 20:00:00" dose="1.03" type="basal"/>
+    <event ts="02-01-2020 21:00:00" dose="0.99" type="basal"/>
+    <event ts="02-01-2020 22:00:00" dose="1.01" type="basal"/>
+    <event ts="02-01-2020 23:00:00" dose="0.98" type="basal"/>
+  </insulin>
+  <meal>
+    <event ts="01-01-2020 06:30:00" carbs="58"/>
+    <event ts="01-01-2020 12:28:00" carbs="58"/>
+    <event ts="01-01-2020 17:44:00" carbs="61"/>
+    <event ts="02-01-2020 07:23:00" carbs="49"/>
+    <event ts="02-01-2020 11:54:00" carbs="43"/>
+    <event ts="02-01-2020 18:14:00" carbs="69"/>
+  </meal>
 </patient>

@@ -189,7 +189,7 @@ def generate_sample_meal_data(insulin_df):
 
 def create_xml_file(patient_id, glucose_df, insulin_df, meal_df, output_file):
     """
-    Create an XML file in the OhioT1DM format
+    Create an XML file in the OhioT1DM format compatible with preprocess.py
     
     Parameters:
     -----------
@@ -207,27 +207,42 @@ def create_xml_file(patient_id, glucose_df, insulin_df, meal_df, output_file):
     # Create the root element
     root = ET.Element("patient")
     root.set("id", patient_id)
+    # Add weight and insulin_type attributes required by the preprocessing script
+    root.set("weight", "80.0")  # Default weight in kg
+    root.set("insulin_type", "analog")  # Default insulin type
     
-    # Add glucose entries
+    # Create glucose_level parent
+    glucose_parent = ET.SubElement(root, "glucose_level")
+    
+    # Add glucose entries as events
     for _, row in glucose_df.iterrows():
-        entry = ET.SubElement(root, "glucose_level")
-        timestamp = int(row['datetime'].timestamp())
-        entry.set("ts", str(timestamp))
+        entry = ET.SubElement(glucose_parent, "event")
+        # Format timestamp as DD-MM-YYYY HH:MM:SS
+        ts_str = row['datetime'].strftime('%d-%m-%Y %H:%M:%S')
+        entry.set("ts", ts_str)
         entry.set("value", str(int(row['glucose'])))
     
-    # Add insulin entries
+    # Create insulin parent
+    insulin_parent = ET.SubElement(root, "insulin")
+    
+    # Add insulin entries as events
     for _, row in insulin_df.iterrows():
-        entry = ET.SubElement(root, "insulin")
-        timestamp = int(row['datetime'].timestamp())
-        entry.set("ts", str(timestamp))
+        entry = ET.SubElement(insulin_parent, "event")
+        # Format timestamp as DD-MM-YYYY HH:MM:SS
+        ts_str = row['datetime'].strftime('%d-%m-%Y %H:%M:%S')
+        entry.set("ts", ts_str)
         entry.set("dose", str(round(row['insulin'], 2)))
         entry.set("type", row['type'])
     
-    # Add meal entries
+    # Create meal parent
+    meal_parent = ET.SubElement(root, "meal")
+    
+    # Add meal entries as events
     for _, row in meal_df.iterrows():
-        entry = ET.SubElement(root, "meal")
-        timestamp = int(row['datetime'].timestamp())
-        entry.set("ts", str(timestamp))
+        entry = ET.SubElement(meal_parent, "event")
+        # Format timestamp as DD-MM-YYYY HH:MM:SS
+        ts_str = row['datetime'].strftime('%d-%m-%Y %H:%M:%S')
+        entry.set("ts", ts_str)
         entry.set("carbs", str(int(row['carbs'])))
     
     # Create a formatted XML string
