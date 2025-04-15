@@ -13,6 +13,41 @@ This project provides:
 ![Clarke Error Grid](images/clarke_grid_example.png)
 *Sample Clarke Error Grid Analysis showing prediction clinical accuracy*
 
+## ⚠️ Important: Two-Component Architecture ⚠️
+
+This system requires **two components** running simultaneously:
+
+1. **Backend API Server** (port 8001) - Handles predictions
+2. **Web Interface** (port 5001) - Provides user interface
+
+Both components must be running for the system to work properly.
+
+### Running Both Components
+
+```bash
+# Terminal 1: Start the API server (MUST use uvicorn)
+python -m uvicorn simple_glucose_api:app --host 0.0.0.0 --port 8001
+
+# Terminal 2: Start the web interface
+python web_interface.py
+```
+
+Then access the web interface at: http://localhost:5001
+- Username: admin
+- Password: admin
+
+### Required Dependencies
+
+Before running, ensure you have all required packages:
+
+```bash
+# Install all dependencies
+pip install -r requirements.txt
+
+# If you encounter issues with FastAPI or uvicorn
+pip install fastapi uvicorn
+```
+
 ## Project Structure
 
 ```
@@ -134,14 +169,26 @@ See [SAMPLE_DATA_README.md](SAMPLE_DATA_README.md) for detailed information on w
 ## Running the APIs
 
 ```bash
-# Start the simple API
-python simple_glucose_api.py
+# Start the API server (IMPORTANT: must use uvicorn)
+python -m uvicorn simple_glucose_api:app --host 0.0.0.0 --port 8001
 
-# Test the API
+# In a separate terminal, start the web interface
+python web_interface.py
+
+# Test the API directly (optional)
 python test_simple_api.py
 ```
 
-The API will be available at `http://localhost:8001/`.
+The API will be available at `http://localhost:8001/` and the web interface at `http://localhost:5001/`.
+
+### Common Issues and Troubleshooting
+
+- **"ModuleNotFoundError: No module named 'fastapi'"**: Install FastAPI using `pip install fastapi uvicorn`
+- **"Connection refused" in web interface**: Make sure the API server is running on port 8001
+- **Cannot connect to web interface**: Ensure Flask is installed with `pip install flask requests`
+- **Wrong prediction results**: Check that you're using the correct API endpoint and data format
+
+⚠️ **Important Note**: Simply running `python simple_glucose_api.py` is not sufficient. You must use the uvicorn command as shown above.
 
 ## API Endpoints
 
@@ -164,6 +211,35 @@ Example prediction request:
   "carbs_1h": 0
 }
 ```
+
+## Web Interface
+
+The web interface provides a user-friendly dashboard for interacting with the API:
+
+```bash
+# Make sure the API is running first
+python -m uvicorn simple_glucose_api:app --host 0.0.0.0 --port 8001
+
+# Then start the web interface (in a separate terminal)
+python web_interface.py
+```
+
+### Accessing the Web Interface
+
+1. Open your browser and navigate to: http://localhost:5001
+2. Log in with the default credentials:
+   - Username: admin
+   - Password: admin
+
+### Features
+
+- Interactive dashboard for glucose predictions
+- Real-time charts and visualizations
+- Patient selection and management
+- Historical prediction tracking
+- User authentication and role management
+
+For more details about the web interface, see [WEB_INTERFACE_README.md](WEB_INTERFACE_README.md).
 
 ## Validation Framework
 
